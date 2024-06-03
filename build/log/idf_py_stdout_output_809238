@@ -1,0 +1,474 @@
+[0;32mI (120) esp_image: segment 1: paddr=0001e08c vaddr=3fc924ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x29 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40378636
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May 29 2024 18:35:39[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e064h ( 57444) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001e08c vaddr=3fc92400 size=01f8ch (  8076) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1c0a0h (114848) map[0m
+[0;32mI (153) esp_image: segment 3: paddr=0003c0c8 vaddr=3fc9438c size=00954h (  2388) load[0m
+[0;32mI (154) esp_image: segment 4: paddr=0003ca24 vaddr=40374000 size=0e398h ( 58264) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (192) cpu_start: Multicore app[0m
+[0;32mI (201) cpu_start: Pro cpu start user code[0m
+[0;32mI (201) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (204) cpu_start: Project name:     lectura_encoders[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     May 29 2024 18:35:37[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  7d56f3c85...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (240) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FC955D0 len 00054140 (336 KiB): RAM[0m
+[0;32mI (258) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (278) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (288) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (292) spi_flash: flash io: opi_str[0m
+[0;33mW (297) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (317) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (344) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (354) Prueba: I2C configurado[0m
+[0;32mI (374) Prueba: Handle configurado[0m
+[0;32mI (374) Prueba: Prueba realizada[0m
+[0;32mI (374) Prueba: Al parecer se ha configurado el sensor de manera exitosa[0m
+[0;32mI (374) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (1384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (1384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (1884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (1884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (2384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (2384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (2884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (2884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (3384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (3384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (3884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (3884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (4384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (4384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (4884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (4884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (5384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (5384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (5884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (5884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (6384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (6384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (6884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (6884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (7384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (7384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (7884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (7884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (8384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (8384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (8884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (8884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (9384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (9384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (9884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (9884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (10384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (10384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (10884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (10884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (11384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (11384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (11884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (11884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (12384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (12384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (12884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (12884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (13384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (13384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (13884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (13884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (14384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (14384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (14884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (14884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (15384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (15384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (15884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (15884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (16384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (16384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (16884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (16884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (17384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (17384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (17884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (17884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (18384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (18384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (18884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (18884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (19384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (19384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (19884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (19884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (20384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (20384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (20884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (20884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (21384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (21384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (21884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (21884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (22384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (22384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (22884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (22884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (23384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (23384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (23884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (23884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (24384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (24384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (24884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (24884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (25384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (25384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (25884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (25884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (26384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (26384) Prueba: El valor crudo es el siguiente para By: 255[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x29 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40378636
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May 29 2024 18:35:39[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e064h ( 57444) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001e08c vaddr=3fc92400 size=01f8ch (  8076) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1c0a0h (114848) map[0m
+[0;32mI (153) esp_image: segment 3: paddr=0003c0c8 vaddr=3fc9438c size=00954h (  2388) load[0m
+[0;32mI (154) esp_image: segment 4: paddr=0003ca24 vaddr=40374000 size=0e398h ( 58264) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (192) cpu_start: Multicore app[0m
+[0;32mI (201) cpu_start: Pro cpu start user code[0m
+[0;32mI (201) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (204) cpu_start: Project name:     lectura_encoders[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     May 29 2024 18:35:37[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  7d56f3c85...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (240) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FC955D0 len 00054140 (336 KiB): RAM[0m
+[0;32mI (258) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (278) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (288) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (292) spi_flash: flash io: opi_str[0m
+[0;33mW (297) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (317) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (344) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (354) Prueba: I2C configurado[0m
+[0;32mI (374) Prueba: Handle configurado[0m
+[0;32mI (374) Prueba: Prueba realizada[0m
+[0;32mI (374) Prueba: Al parecer se ha configurado el sensor de manera exitosa[0m
+[0;32mI (374) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (1384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (1384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (1884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (1884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (2384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (2384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (2884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (2884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (3384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (3384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (3884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (3884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (4384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (4384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (4884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (4884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (5384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (5384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (5884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (5884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (6384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (6384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (6884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (6884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (7384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (7384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (7884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (7884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (8384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (8384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (8884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (8884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (9384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (9384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (9884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (9884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (10384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (10384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (10884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (10884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (11384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (11384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (11884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (11884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (12384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (12384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (12884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (12884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (13384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (13384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (13884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (13884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (14384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (14384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (14884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (14884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (15384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (15384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (15884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (15884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (16384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (16384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (16884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (16884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (17384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (17384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (17884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (17884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (18384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (18384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (18884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (18884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (19384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (19384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (19884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (19884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (20384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (20384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (20884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (20884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (21384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (21384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (21884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (21884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (22384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (22384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (22884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (22884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (23384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (23384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (23884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (23884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (24384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (24384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (24884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (24884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (25384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (25384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (25884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (25884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (26384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (26384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (26884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (26884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (27384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (27384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (27884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (27884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (28384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (28384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (28884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (28884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (29384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (29384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (29884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (29884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (30384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (30384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (30884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (30884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (31384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (31384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (31884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (31884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (32384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (32384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (32884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (32884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (33384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (33384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (33884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (33884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (34384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (34384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (34884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (34884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (35384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (35384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (35884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (35884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (36384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (36384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (36884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (36884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (37384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (37384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (37884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (37884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (38384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (38384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (38884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (38884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (39384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (39384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (39884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (39884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (40384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (40384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (40884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (40884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (41384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (41384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (41884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (41884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (42384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (42384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (42884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (42884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (43384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (43384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (43884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (43884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (44384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (44384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (44884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (44884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (45384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (45384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (45884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (45884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (46384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (46384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (46884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (46884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (47384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (47384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (47884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (47884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (48384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (48384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (48884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (48884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (49384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (49384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (49884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (49884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (50384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (50384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (50884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (50884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (51384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (51384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (51884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (51884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (52384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (52384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (52884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (52884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (53384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (53384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (53884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (53884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (54384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (54384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (54884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (54884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (55384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (55384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (55884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (55884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (56384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (56384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (56884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (56884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (57384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (57384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (57884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (57884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (58384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (58384) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (58884) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (58884) Prueba: El valor crudo es el siguiente para By: 255[0m
+[0;32mI (59384) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (59384) Prueba: El valor crudo es el siguiente para By: 255[0m

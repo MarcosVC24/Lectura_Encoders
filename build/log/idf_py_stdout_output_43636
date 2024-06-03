@@ -1,0 +1,221 @@
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c02002ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40378636
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May 29 2024 18:35:39[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e144h ( 57668) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001e16c vaddr=3fc92400 size=01each (  7852) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1c180h (115072) map[0m
+[0;32mI (153) esp_image: segment 3: paddr=0003c1a8 vaddr=3fc942ac size=00a34h (  2612) load[0m
+[0;32mI (154) esp_image: segment 4: paddr=0003cbe4 vaddr=40374000 size=0e398h ( 58264) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (192) cpu_start: Multicore app[0m
+[0;32mI (201) cpu_start: Pro cpu start user code[0m
+[0;32mI (201) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (204) cpu_start: Project name:     lectura_encoders[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     May 29 2024 18:35:37[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  74fa4e2f9...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (240) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FC955D0 len 00054140 (336 KiB): RAM[0m
+[0;32mI (258) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (278) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (288) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (293) spi_flash: flash io: opi_str[0m
+[0;33mW (297) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (317) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (344) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (354) Prueba: I2C configurado[0m
+[0;32mI (354) Prueba: Handle configurado[0m
+[0;32mI (354) Prueba: Reset handle configurado[0m
+[0;32mI (404) Prueba: Encoder Reiniciado[0m
+[0;32mI (404) Prueba: Prueba realizada[0m
+[0;32mI (404) Prueba: Al parecer se ha configurado el sensor de manera exitosa[0m
+[0;32mI (404) Prueba: El valor crudo es el siguiente para Bx: 212[0m
+[0;32mI (414) Prueba: El valor procesado es el siguiente para Bx: -68[0m
+[0;32mI (914) Prueba: El valor crudo es el siguiente para Bx: 212[0m
+[0;32mI (914) Prueba: El valor procesado es el siguiente para Bx: -68[0m
+[0;32mI (1414) Prueba: El valor crudo es el siguiente para Bx: 214[0m
+[0;32mI (1414) Prueba: El valor procesado es el siguiente para Bx: -65[0m
+[0;32mI (1914) Prueba: El valor crudo es el siguiente para Bx: 214[0m
+[0;32mI (1914) Prueba: El valor procesado es el siguiente para Bx: -65[0m
+[0;32mI (2414) Prueba: El valor crudo es el siguiente para Bx: 214[0m
+[0;32mI (2414) Prueba: El valor procesado es el siguiente para Bx: -65[0m
+[0;32mI (2914) Prueba: El valor crudo es el siguiente para Bx: 214[0m
+[0;32mI (2914) Prueba: El valor procesado es el siguiente para Bx: -65[0m
+[0;32mI (3414) Prueba: El valor crudo es el siguiente para Bx: 214[0m
+[0;32mI (3414) Prueba: El valor procesado es el siguiente para Bx: -65[0m
+[0;32mI (3914) Prueba: El valor crudo es el siguiente para Bx: 214[0m
+[0;32mI (3914) Prueba: El valor procesado es el siguiente para Bx: -65[0m
+[0;32mI (4414) Prueba: El valor crudo es el siguiente para Bx: 214[0m
+[0;32mI (4414) Prueba: El valor procesado es el siguiente para Bx: -65[0m
+[0;32mI (4914) Prueba: El valor crudo es el siguiente para Bx: 214[0m
+[0;32mI (4914) Prueba: El valor procesado es el siguiente para Bx: -65[0m
+[0;32mI (5414) Prueba: El valor crudo es el siguiente para Bx: 214[0m
+[0;32mI (5414) Prueba: El valor procesado es el siguiente para Bx: -65[0m
+[0;32mI (5914) Prueba: El valor crudo es el siguiente para Bx: 214[0m
+[0;32mI (5914) Prueba: El valor procesado es el siguiente para Bx: -65[0m
+[0;32mI (6414) Prueba: El valor crudo es el siguiente para Bx: 214[0m
+[0;32mI (6414) Prueba: El valor procesado es el siguiente para Bx: -65[0m
+[0;32mI (6914) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (6914) Prueba: El valor procesado es el siguiente para Bx: -123[0m
+[0;32mI (7414) Prueba: El valor crudo es el siguiente para Bx: 190[0m
+[0;32mI (7414) Prueba: El valor procesado es el siguiente para Bx: -102[0m
+[0;32mI (7914) Prueba: El valor crudo es el siguiente para Bx: 190[0m
+[0;32mI (7914) Prueba: El valor procesado es el siguiente para Bx: -102[0m
+[0;32mI (8414) Prueba: El valor crudo es el siguiente para Bx: 190[0m
+[0;32mI (8414) Prueba: El valor procesado es el siguiente para Bx: -102[0m
+[0;32mI (8914) Prueba: El valor crudo es el siguiente para Bx: 190[0m
+[0;32mI (8914) Prueba: El valor procesado es el siguiente para Bx: -102[0m
+[0;32mI (9414) Prueba: El valor crudo es el siguiente para Bx: 188[0m
+[0;32mI (9414) Prueba: El valor procesado es el siguiente para Bx: -106[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x403774c3  PS      : 0x00060034  A0      : 0x803776a1  A1      : 0x3fc932c0  
+A2      : 0x3fc9a5d4  A3      : 0x00000000  A4      : 0x000000e0  A5      : 0x3fc99070  
+A6      : 0x00060323  A7      : 0x3fc9a8f8  A8      : 0x6500c211  A9      : 0x00060323  
+A10     : 0x00000001  A11     : 0x3fc9a984  A12     : 0x00000000  A13     : 0x3fc99090  
+A14     : 0x00060323  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+Core  0 was running in ISR context:
+EPC1    : 0x4201a2cf  EPC2    : 0x00000000  EPC3    : 0x00000000  EPC4    : 0x403774c3
+
+
+Backtrace: 0x403774c0:0x3fc932c0 0x4037769e:0x3fc932f0 0x403762fd:0x3fc93330 0x40377175:0x3fc93350 0x4200af77:0x3fc99120 0x4200b14c:0x3fc99150 0x4200b213:0x3fc99190 0x4200bdc3:0x3fc991c0 0x420085a2:0x3fc99230 0x4201b8cf:0x3fc992a0 0x4037a9e1:0x3fc992d0
+
+
+Core  1 register dump:
+PC      : 0x40378636  PS      : 0x00060734  A0      : 0x82002db1  A1      : 0x3fc9a130  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x3fc97000  A5      : 0x3fc96fe0  
+A6      : 0x403783f8  A7      : 0x00000001  A8      : 0x8200d94e  A9      : 0x3fc9a0f0  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0x3fc96fe0  A13     : 0x3fc96fb0  
+A14     : 0x00000001  A15     : 0x3fc9a2f8  SAR     : 0x00000000  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40378633:0x3fc9a130 0x42002dae:0x3fc9a150 0x4037b925:0x3fc9a170 0x4037a9e1:0x3fc9a190
+
+
+
+
+ELF file SHA256: 74fa4e2f9
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375860
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (32) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time May 29 2024 18:35:39[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e144h ( 57668) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001e16c vaddr=3fc92400 size=01each (  7852) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1c180h (115072) map[0m
+[0;32mI (152) esp_image: segment 3: paddr=0003c1a8 vaddr=3fc942ac size=00a34h (  2612) load[0m
+[0;32mI (153) esp_image: segment 4: paddr=0003cbe4 vaddr=40374000 size=0e398h ( 58264) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (201) cpu_start: Pro cpu start user code[0m
+[0;32mI (201) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (201) cpu_start: Application information:[0m
+[0;32mI (204) cpu_start: Project name:     lectura_encoders[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (214) cpu_start: Compile time:     May 29 2024 18:35:37[0m
+[0;32mI (220) cpu_start: ELF file SHA256:  74fa4e2f9...[0m
+[0;32mI (225) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (230) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (235) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (240) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FC955D0 len 00054140 (336 KiB): RAM[0m
+[0;32mI (258) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (277) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (287) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (292) spi_flash: flash io: opi_str[0m
+[0;33mW (296) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (316) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (344) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (354) Prueba: I2C configurado[0m
+[0;32mI (354) Prueba: Handle configurado[0m
+[0;32mI (354) Prueba: Reset handle configurado[0m
+[0;32mI (404) Prueba: Encoder Reiniciado[0m
+[0;32mI (404) Prueba: Prueba realizada[0m
+[0;32mI (404) Prueba: Al parecer se ha configurado el sensor de manera exitosa[0m
+[0;32mI (404) Prueba: El valor crudo es el siguiente para Bx: 188[0m
+[0;32mI (414) Prueba: El valor procesado es el siguiente para Bx: -106[0m
+[0;32mI (914) Prueba: El valor crudo es el siguiente para Bx: 187[0m
+[0;32mI (914) Prueba: El valor procesado es el siguiente para Bx: -107[0m
+[0;32mI (1414) Prueba: El valor crudo es el siguiente para Bx: 187[0m
+[0;32mI (1414) Prueba: El valor procesado es el siguiente para Bx: -107[0m
+[0;32mI (1914) Prueba: El valor crudo es el siguiente para Bx: 187[0m
+[0;32mI (1914) Prueba: El valor procesado es el siguiente para Bx: -107[0m
+[0;32mI (2414) Prueba: El valor crudo es el siguiente para Bx: 187[0m
+[0;32mI (2414) Prueba: El valor procesado es el siguiente para Bx: -107[0m
+[0;32mI (2914) Prueba: El valor crudo es el siguiente para Bx: 187[0m
+[0;32mI (2914) Prueba: El valor procesado es el siguiente para Bx: -107[0m
+[0;32mI (3414) Prueba: El valor crudo es el siguiente para Bx: 187[0m
+[0;32mI (3414) Prueba: El valor procesado es el siguiente para Bx: -107[0m
+[0;32mI (3914) Prueba: El valor crudo es el siguiente para Bx: 187[0m
+[0;32mI (3914) Prueba: El valor procesado es el siguiente para Bx: -107[0m

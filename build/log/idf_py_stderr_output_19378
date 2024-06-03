@@ -1,0 +1,38 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40378636: esp_cpu_wait_for_intr at /home/marcos/Esp32/esp-idf/components/esp_hw_support/cpu.c:145
+[0m
+[0;33m0x403774c3: i2c_isr_receive_handler at /home/marcos/Esp32/esp-idf/components/driver/i2c/i2c_master.c:529 (discriminator 1)
+[0m
+[0;33m0x400570e8: memset in ROM
+0x400570f3: memset in ROM
+[0m
+[0;33m0x4201a907: uart_hal_write_txfifo at /home/marcos/Esp32/esp-idf/components/hal/uart_hal_iram.c:27
+0x403774c3: i2c_isr_receive_handler at /home/marcos/Esp32/esp-idf/components/driver/i2c/i2c_master.c:529 (discriminator 1)
+[0m
+[0;33m0x403774c0: i2c_ll_is_bus_busy at /home/marcos/Esp32/esp-idf/components/hal/esp32s3/include/hal/i2c_ll.h:487
+ (inlined by) i2c_isr_receive_handler at /home/marcos/Esp32/esp-idf/components/driver/i2c/i2c_master.c:529
+0x4037769e: i2c_master_isr_handler_default at /home/marcos/Esp32/esp-idf/components/driver/i2c/i2c_master.c:586
+0x403762fd: shared_intr_isr at /home/marcos/Esp32/esp-idf/components/esp_hw_support/intr_alloc.c:443
+0x40377175: _xt_lowint1 at /home/marcos/Esp32/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4200b0ec: s_i2c_send_commands at /home/marcos/Esp32/esp-idf/components/driver/i2c/i2c_master.c:433 (discriminator 1)
+0x4200b2c4: s_i2c_transaction_start at /home/marcos/Esp32/esp-idf/components/driver/i2c/i2c_master.c:509
+0x4200b38b: s_i2c_synchronous_transaction at /home/marcos/Esp32/esp-idf/components/driver/i2c/i2c_master.c:780
+0x4200bf3b: i2c_master_receive at /home/marcos/Esp32/esp-idf/components/driver/i2c/i2c_master.c:1026
+0x42008662: app_main at /home/marcos/Esp32/lectura_encoders/main/lectura_encoders.c:89
+0x4201bf13: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037a9e1: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40378636: esp_cpu_wait_for_intr at /home/marcos/Esp32/esp-idf/components/esp_hw_support/cpu.c:145
+[0m
+[0;33m0x403783f8: ipc_task at /home/marcos/Esp32/esp-idf/components/esp_system/esp_ipc.c:48
+[0m
+[0;33m0x40378633: xt_utils_wait_for_intr at /home/marcos/Esp32/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /home/marcos/Esp32/esp-idf/components/esp_hw_support/cpu.c:132
+0x42002e66: esp_vApplicationIdleHook at /home/marcos/Esp32/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037b925: prvIdleTask at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037a9e1: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375860: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0m

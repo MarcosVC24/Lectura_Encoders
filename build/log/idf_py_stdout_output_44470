@@ -1,0 +1,1711 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40378636
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May 29 2024 18:35:39[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e144h ( 57668) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001e16c vaddr=3fc92400 size=01each (  7852) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1c180h (115072) map[0m
+[0;32mI (153) esp_image: segment 3: paddr=0003c1a8 vaddr=3fc942ac size=00a34h (  2612) load[0m
+[0;32mI (154) esp_image: segment 4: paddr=0003cbe4 vaddr=40374000 size=0e398h ( 58264) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (192) cpu_start: Multicore app[0m
+[0;32mI (201) cpu_start: Pro cpu start user code[0m
+[0;32mI (201) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (204) cpu_start: Project name:     lectura_encoders[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     May 29 2024 18:35:37[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  867f65b82...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (240) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FC955D0 len 00054140 (336 KiB): RAM[0m
+[0;32mI (258) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (278) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (288) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (293) spi_flash: flash io: opi_str[0m
+[0;33mW (297) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (317) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (344) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (354) Prueba: I2C configurado[0m
+[0;32mI (354) Prueba: Handle configurado[0m
+[0;32mI (354) Prueba: Reset handle configurado[0m
+[0;32mI (404) Prueba: Encoder Reiniciado[0m
+[0;32mI (404) Prueba: Prueba realizada[0m
+[0;32mI (404) Prueba: Al parecer se ha configurado el sensor de manera exitosa[0m
+[0;32mI (404) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (414) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (914) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (914) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (1414) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (1414) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (1914) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (1914) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (2414) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (2414) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (2914) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (2914) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (3414) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (3414) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (3914) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (3914) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (4414) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (4414) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (4914) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (4914) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (5414) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (5414) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (5914) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (5914) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (6414) Prueba: El valor crudo es el siguiente para Bx: 182[0m
+[0;32mI (6414) Prueba: El valor procesado es el siguiente para Bx: -115mT[0m
+[0;32mI (6914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (6914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (7414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (7414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (7914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (7914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (8414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (8414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (8914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (8914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (9414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (9414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (9914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (9914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (10414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (10414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (10914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (10914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (11414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (11414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (11914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (11914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (12414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (12414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (12914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (12914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (13414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (13414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (13914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (13914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (14414) Prueba: El valor crudo es el siguiente para Bx: 180[0m
+[0;32mI (14414) Prueba: El valor procesado es el siguiente para Bx: -118mT[0m
+[0;32mI (14914) Prueba: El valor crudo es el siguiente para Bx: 188[0m
+[0;32mI (14914) Prueba: El valor procesado es el siguiente para Bx: -106mT[0m
+[0;32mI (15414) Prueba: El valor crudo es el siguiente para Bx: 188[0m
+[0;32mI (15414) Prueba: El valor procesado es el siguiente para Bx: -106mT[0m
+[0;32mI (15914) Prueba: El valor crudo es el siguiente para Bx: 125[0m
+[0;32mI (15914) Prueba: El valor procesado es el siguiente para Bx: 195mT[0m
+[0;32mI (16414) Prueba: El valor crudo es el siguiente para Bx: 194[0m
+[0;32mI (16414) Prueba: El valor procesado es el siguiente para Bx: -96mT[0m
+[0;32mI (16914) Prueba: El valor crudo es el siguiente para Bx: 194[0m
+[0;32mI (16914) Prueba: El valor procesado es el siguiente para Bx: -96mT[0m
+[0;32mI (17414) Prueba: El valor crudo es el siguiente para Bx: 193[0m
+[0;32mI (17414) Prueba: El valor procesado es el siguiente para Bx: -98mT[0m
+[0;32mI (17914) Prueba: El valor crudo es el siguiente para Bx: 193[0m
+[0;32mI (17914) Prueba: El valor procesado es el siguiente para Bx: -98mT[0m
+[0;32mI (18414) Prueba: El valor crudo es el siguiente para Bx: 193[0m
+[0;32mI (18414) Prueba: El valor procesado es el siguiente para Bx: -98mT[0m
+[0;32mI (18914) Prueba: El valor crudo es el siguiente para Bx: 193[0m
+[0;32mI (18914) Prueba: El valor procesado es el siguiente para Bx: -98mT[0m
+[0;32mI (19414) Prueba: El valor crudo es el siguiente para Bx: 193[0m
+[0;32mI (19414) Prueba: El valor procesado es el siguiente para Bx: -98mT[0m
+[0;32mI (19914) Prueba: El valor crudo es el siguiente para Bx: 193[0m
+[0;32mI (19914) Prueba: El valor procesado es el siguiente para Bx: -98mT[0m
+[0;32mI (20414) Prueba: El valor crudo es el siguiente para Bx: 193[0m
+[0;32mI (20414) Prueba: El valor procesado es el siguiente para Bx: -98mT[0m
+[0;32mI (20914) Prueba: El valor crudo es el siguiente para Bx: 191[0m
+[0;32mI (20914) Prueba: El valor procesado es el siguiente para Bx: -101mT[0m
+[0;32mI (21414) Prueba: El valor crudo es el siguiente para Bx: 191[0m
+[0;32mI (21414) Prueba: El valor procesado es el siguiente para Bx: -101mT[0m
+[0;32mI (21914) Prueba: El valor crudo es el siguiente para Bx: 191[0m
+[0;32mI (21914) Prueba: El valor procesado es el siguiente para Bx: -101mT[0m
+[0;32mI (22414) Prueba: El valor crudo es el siguiente para Bx: 191[0m
+[0;32mI (22414) Prueba: El valor procesado es el siguiente para Bx: -101mT[0m
+[0;32mI (22914) Prueba: El valor crudo es el siguiente para Bx: 190[0m
+[0;32mI (22914) Prueba: El valor procesado es el siguiente para Bx: -102mT[0m
+[0;32mI (23414) Prueba: El valor crudo es el siguiente para Bx: 190[0m
+[0;32mI (23414) Prueba: El valor procesado es el siguiente para Bx: -102mT[0m
+[0;32mI (23914) Prueba: El valor crudo es el siguiente para Bx: 188[0m
+[0;32mI (23914) Prueba: El valor procesado es el siguiente para Bx: -106mT[0m
+[0;32mI (24414) Prueba: El valor crudo es el siguiente para Bx: 188[0m
+[0;32mI (24414) Prueba: El valor procesado es el siguiente para Bx: -106mT[0m
+[0;32mI (24914) Prueba: El valor crudo es el siguiente para Bx: 187[0m
+[0;32mI (24914) Prueba: El valor procesado es el siguiente para Bx: -107mT[0m
+[0;32mI (25414) Prueba: El valor crudo es el siguiente para Bx: 187[0m
+[0;32mI (25414) Prueba: El valor procesado es el siguiente para Bx: -107mT[0m
+[0;32mI (25914) Prueba: El valor crudo es el siguiente para Bx: 184[0m
+[0;32mI (25914) Prueba: El valor procesado es el siguiente para Bx: -112mT[0m
+[0;32mI (26414) Prueba: El valor crudo es el siguiente para Bx: 184[0m
+[0;32mI (26414) Prueba: El valor procesado es el siguiente para Bx: -112mT[0m
+[0;32mI (26914) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (26914) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (27414) Prueba: El valor crudo es el siguiente para Bx: 182[0m
+[0;32mI (27414) Prueba: El valor procesado es el siguiente para Bx: -115mT[0m
+[0;32mI (27914) Prueba: El valor crudo es el siguiente para Bx: 182[0m
+[0;32mI (27914) Prueba: El valor procesado es el siguiente para Bx: -115mT[0m
+[0;32mI (28414) Prueba: El valor crudo es el siguiente para Bx: 166[0m
+[0;32mI (28414) Prueba: El valor procesado es el siguiente para Bx: -140mT[0m
+[0;32mI (28914) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (28914) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (29414) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (29414) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (29914) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (29914) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (30414) Prueba: El valor crudo es el siguiente para Bx: 182[0m
+[0;32mI (30414) Prueba: El valor procesado es el siguiente para Bx: -115mT[0m
+[0;32mI (30914) Prueba: El valor crudo es el siguiente para Bx: 192[0m
+[0;32mI (30914) Prueba: El valor procesado es el siguiente para Bx: -99mT[0m
+[0;32mI (31414) Prueba: El valor crudo es el siguiente para Bx: 208[0m
+[0;32mI (31414) Prueba: El valor procesado es el siguiente para Bx: -74mT[0m
+[0;32mI (31914) Prueba: El valor crudo es el siguiente para Bx: 216[0m
+[0;32mI (31914) Prueba: El valor procesado es el siguiente para Bx: -62mT[0m
+[0;32mI (32414) Prueba: El valor crudo es el siguiente para Bx: 216[0m
+[0;32mI (32414) Prueba: El valor procesado es el siguiente para Bx: -62mT[0m
+[0;32mI (32914) Prueba: El valor crudo es el siguiente para Bx: 152[0m
+[0;32mI (32914) Prueba: El valor procesado es el siguiente para Bx: -162mT[0m
+[0;32mI (33414) Prueba: El valor crudo es el siguiente para Bx: 216[0m
+[0;32mI (33414) Prueba: El valor procesado es el siguiente para Bx: -62mT[0m
+[0;32mI (33914) Prueba: El valor crudo es el siguiente para Bx: 216[0m
+[0;32mI (33914) Prueba: El valor procesado es el siguiente para Bx: -62mT[0m
+[0;32mI (34414) Prueba: El valor crudo es el siguiente para Bx: 216[0m
+[0;32mI (34414) Prueba: El valor procesado es el siguiente para Bx: -62mT[0m
+[0;32mI (34914) Prueba: El valor crudo es el siguiente para Bx: 216[0m
+[0;32mI (34914) Prueba: El valor procesado es el siguiente para Bx: -62mT[0m
+[0;32mI (35414) Prueba: El valor crudo es el siguiente para Bx: 216[0m
+[0;32mI (35414) Prueba: El valor procesado es el siguiente para Bx: -62mT[0m
+[0;32mI (35914) Prueba: El valor crudo es el siguiente para Bx: 216[0m
+[0;32mI (35914) Prueba: El valor procesado es el siguiente para Bx: -62mT[0m
+[0;32mI (36414) Prueba: El valor crudo es el siguiente para Bx: 213[0m
+[0;32mI (36414) Prueba: El valor procesado es el siguiente para Bx: -67mT[0m
+[0;32mI (36914) Prueba: El valor crudo es el siguiente para Bx: 213[0m
+[0;32mI (36914) Prueba: El valor procesado es el siguiente para Bx: -67mT[0m
+[0;32mI (37414) Prueba: El valor crudo es el siguiente para Bx: 206[0m
+[0;32mI (37414) Prueba: El valor procesado es el siguiente para Bx: -78mT[0m
+[0;32mI (37914) Prueba: El valor crudo es el siguiente para Bx: 203[0m
+[0;32mI (37914) Prueba: El valor procesado es el siguiente para Bx: -82mT[0m
+[0;32mI (38414) Prueba: El valor crudo es el siguiente para Bx: 200[0m
+[0;32mI (38414) Prueba: El valor procesado es el siguiente para Bx: -87mT[0m
+[0;32mI (38914) Prueba: El valor crudo es el siguiente para Bx: 193[0m
+[0;32mI (38914) Prueba: El valor procesado es el siguiente para Bx: -98mT[0m
+[0;32mI (39414) Prueba: El valor crudo es el siguiente para Bx: 185[0m
+[0;32mI (39414) Prueba: El valor procesado es el siguiente para Bx: -110mT[0m
+[0;32mI (39914) Prueba: El valor crudo es el siguiente para Bx: 185[0m
+[0;32mI (39914) Prueba: El valor procesado es el siguiente para Bx: -110mT[0m
+[0;32mI (40414) Prueba: El valor crudo es el siguiente para Bx: 185[0m
+[0;32mI (40414) Prueba: El valor procesado es el siguiente para Bx: -110mT[0m
+[0;32mI (40914) Prueba: El valor crudo es el siguiente para Bx: 185[0m
+[0;32mI (40914) Prueba: El valor procesado es el siguiente para Bx: -110mT[0m
+[0;32mI (41414) Prueba: El valor crudo es el siguiente para Bx: 182[0m
+[0;32mI (41414) Prueba: El valor procesado es el siguiente para Bx: -115mT[0m
+[0;32mI (41914) Prueba: El valor crudo es el siguiente para Bx: 182[0m
+[0;32mI (41914) Prueba: El valor procesado es el siguiente para Bx: -115mT[0m
+[0;32mI (42414) Prueba: El valor crudo es el siguiente para Bx: 182[0m
+[0;32mI (42414) Prueba: El valor procesado es el siguiente para Bx: -115mT[0m
+[0;32mI (42914) Prueba: El valor crudo es el siguiente para Bx: 185[0m
+[0;32mI (42914) Prueba: El valor procesado es el siguiente para Bx: -110mT[0m
+[0;32mI (43414) Prueba: El valor crudo es el siguiente para Bx: 184[0m
+[0;32mI (43414) Prueba: El valor procesado es el siguiente para Bx: -112mT[0m
+[0;32mI (43914) Prueba: El valor crudo es el siguiente para Bx: 182[0m
+[0;32mI (43914) Prueba: El valor procesado es el siguiente para Bx: -115mT[0m
+[0;32mI (44414) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (44414) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (44914) Prueba: El valor crudo es el siguiente para Bx: 180[0m
+[0;32mI (44914) Prueba: El valor procesado es el siguiente para Bx: -118mT[0m
+[0;32mI (45414) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (45414) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (45914) Prueba: El valor crudo es el siguiente para Bx: 180[0m
+[0;32mI (45914) Prueba: El valor procesado es el siguiente para Bx: -118mT[0m
+[0;32mI (46414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (46414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (46914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (46914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (47414) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (47414) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (47914) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (47914) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (48414) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (48414) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (48914) Prueba: El valor crudo es el siguiente para Bx: 176[0m
+[0;32mI (48914) Prueba: El valor procesado es el siguiente para Bx: -124mT[0m
+[0;32mI (49414) Prueba: El valor crudo es el siguiente para Bx: 176[0m
+[0;32mI (49414) Prueba: El valor procesado es el siguiente para Bx: -124mT[0m
+[0;32mI (49914) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (49914) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (50414) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (50414) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (50914) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (50914) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (51414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (51414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (51914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (51914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (52414) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (52414) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (52914) Prueba: El valor crudo es el siguiente para Bx: 187[0m
+[0;32mI (52914) Prueba: El valor procesado es el siguiente para Bx: -107mT[0m
+[0;32mI (53414) Prueba: El valor crudo es el siguiente para Bx: 187[0m
+[0;32mI (53414) Prueba: El valor procesado es el siguiente para Bx: -107mT[0m
+[0;32mI (53914) Prueba: El valor crudo es el siguiente para Bx: 190[0m
+[0;32mI (53914) Prueba: El valor procesado es el siguiente para Bx: -102mT[0m
+[0;32mI (54414) Prueba: El valor crudo es el siguiente para Bx: 190[0m
+[0;32mI (54414) Prueba: El valor procesado es el siguiente para Bx: -102mT[0m
+[0;32mI (54914) Prueba: El valor crudo es el siguiente para Bx: 194[0m
+[0;32mI (54914) Prueba: El valor procesado es el siguiente para Bx: -96mT[0m
+[0;32mI (55414) Prueba: El valor crudo es el siguiente para Bx: 195[0m
+[0;32mI (55414) Prueba: El valor procesado es el siguiente para Bx: -95mT[0m
+[0;32mI (55914) Prueba: El valor crudo es el siguiente para Bx: 196[0m
+[0;32mI (55914) Prueba: El valor procesado es el siguiente para Bx: -93mT[0m
+[0;32mI (56414) Prueba: El valor crudo es el siguiente para Bx: 196[0m
+[0;32mI (56414) Prueba: El valor procesado es el siguiente para Bx: -93mT[0m
+[0;32mI (56914) Prueba: El valor crudo es el siguiente para Bx: 196[0m
+[0;32mI (56914) Prueba: El valor procesado es el siguiente para Bx: -93mT[0m
+[0;32mI (57414) Prueba: El valor crudo es el siguiente para Bx: 196[0m
+[0;32mI (57414) Prueba: El valor procesado es el siguiente para Bx: -93mT[0m
+[0;32mI (57914) Prueba: El valor crudo es el siguiente para Bx: 196[0m
+[0;32mI (57914) Prueba: El valor procesado es el siguiente para Bx: -93mT[0m
+[0;32mI (58414) Prueba: El valor crudo es el siguiente para Bx: 195[0m
+[0;32mI (58414) Prueba: El valor procesado es el siguiente para Bx: -95mT[0m
+[0;32mI (58914) Prueba: El valor crudo es el siguiente para Bx: 187[0m
+[0;32mI (58914) Prueba: El valor procesado es el siguiente para Bx: -107mT[0m
+[0;32mI (59414) Prueba: El valor crudo es el siguiente para Bx: 180[0m
+[0;32mI (59414) Prueba: El valor procesado es el siguiente para Bx: -118mT[0m
+[0;32mI (59914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (59914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (60414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (60414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (60914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (60914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (61414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (61414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (61914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (61914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (62414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (62414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (62914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (62914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (63414) Prueba: El valor crudo es el siguiente para Bx: 180[0m
+[0;32mI (63414) Prueba: El valor procesado es el siguiente para Bx: -118mT[0m
+[0;32mI (63914) Prueba: El valor crudo es el siguiente para Bx: 180[0m
+[0;32mI (63914) Prueba: El valor procesado es el siguiente para Bx: -118mT[0m
+[0;32mI (64414) Prueba: El valor crudo es el siguiente para Bx: 180[0m
+[0;32mI (64414) Prueba: El valor procesado es el siguiente para Bx: -118mT[0m
+[0;32mI (64914) Prueba: El valor crudo es el siguiente para Bx: 180[0m
+[0;32mI (64914) Prueba: El valor procesado es el siguiente para Bx: -118mT[0m
+[0;32mI (65414) Prueba: El valor crudo es el siguiente para Bx: 180[0m
+[0;32mI (65414) Prueba: El valor procesado es el siguiente para Bx: -118mT[0m
+[0;32mI (65914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (65914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (66414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (66414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (66914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (66914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (67414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (67414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (67914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (67914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (68414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (68414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (68914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (68914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (69414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (69414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (69914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (69914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (70414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (70414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (70914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (70914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (71414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (71414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (71914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (71914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (72414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (72414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (72914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (72914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (73414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (73414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (73914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (73914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (74414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (74414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (74914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (74914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (75414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (75414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (75914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (75914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (76414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (76414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (76914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (76914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (77414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (77414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (77914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (77914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (78414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (78414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (78914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (78914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (79414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (79414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (79914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (79914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (80414) Prueba: El valor crudo es el siguiente para Bx: 255[0m
+[0;32mI (80414) Prueba: El valor procesado es el siguiente para Bx: -1mT[0m
+[0;32mI (80914) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (80914) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (81414) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (81414) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (81914) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (81914) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (82414) Prueba: El valor crudo es el siguiente para Bx: 182[0m
+[0;32mI (82414) Prueba: El valor procesado es el siguiente para Bx: -115mT[0m
+[0;32mI (82914) Prueba: El valor crudo es el siguiente para Bx: 188[0m
+[0;32mI (82914) Prueba: El valor procesado es el siguiente para Bx: -106mT[0m
+[0;32mI (83414) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (83414) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (83914) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (83914) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (84414) Prueba: El valor crudo es el siguiente para Bx: 192[0m
+[0;32mI (84414) Prueba: El valor procesado es el siguiente para Bx: -99mT[0m
+[0;32mI (84914) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (84914) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (85414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (85414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (85914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (85914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (86414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (86414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (86914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (86914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (87414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (87414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (87914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (87914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (88414) Prueba: El valor crudo es el siguiente para Bx: 188[0m
+[0;32mI (88414) Prueba: El valor procesado es el siguiente para Bx: -106mT[0m
+[0;32mI (88914) Prueba: El valor crudo es el siguiente para Bx: 197[0m
+[0;32mI (88914) Prueba: El valor procesado es el siguiente para Bx: -92mT[0m
+[0;32mI (89414) Prueba: El valor crudo es el siguiente para Bx: 180[0m
+[0;32mI (89414) Prueba: El valor procesado es el siguiente para Bx: -118mT[0m
+[0;32mI (89914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (89914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (90414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (90414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (90914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (90914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (91414) Prueba: El valor crudo es el siguiente para Bx: 192[0m
+[0;32mI (91414) Prueba: El valor procesado es el siguiente para Bx: -99mT[0m
+[0;32mI (91914) Prueba: El valor crudo es el siguiente para Bx: 184[0m
+[0;32mI (91914) Prueba: El valor procesado es el siguiente para Bx: -112mT[0m
+[0;32mI (92414) Prueba: El valor crudo es el siguiente para Bx: 180[0m
+[0;32mI (92414) Prueba: El valor procesado es el siguiente para Bx: -118mT[0m
+[0;32mI (92914) Prueba: El valor crudo es el siguiente para Bx: 180[0m
+[0;32mI (92914) Prueba: El valor procesado es el siguiente para Bx: -118mT[0m
+[0;32mI (93414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (93414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (93914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (93914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (94414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (94414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (94914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (94914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (95414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (95414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (95914) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (95914) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (96414) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (96414) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (96914) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (96914) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (97414) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (97414) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (97914) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (97914) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (98414) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (98414) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (98914) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (98914) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (99414) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (99414) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (99914) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (99914) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (100414) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (100414) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (100914) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (100914) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (101414) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (101414) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (101914) Prueba: El valor crudo es el siguiente para Bx: 184[0m
+[0;32mI (101914) Prueba: El valor procesado es el siguiente para Bx: -112mT[0m
+[0;32mI (102414) Prueba: El valor crudo es el siguiente para Bx: 217[0m
+[0;32mI (102414) Prueba: El valor procesado es el siguiente para Bx: -60mT[0m
+[0;32mI (102914) Prueba: El valor crudo es el siguiente para Bx: 234[0m
+[0;32mI (102914) Prueba: El valor procesado es el siguiente para Bx: -34mT[0m
+[0;32mI (103414) Prueba: El valor crudo es el siguiente para Bx: 243[0m
+[0;32mI (103414) Prueba: El valor procesado es el siguiente para Bx: -20mT[0m
+[0;32mI (103914) Prueba: El valor crudo es el siguiente para Bx: 248[0m
+[0;32mI (103914) Prueba: El valor procesado es el siguiente para Bx: -12mT[0m
+[0;32mI (104414) Prueba: El valor crudo es el siguiente para Bx: 248[0m
+[0;32mI (104414) Prueba: El valor procesado es el siguiente para Bx: -12mT[0m
+[0;32mI (104914) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (104914) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (105414) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (105414) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (105914) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (105914) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (106414) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (106414) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (106914) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (106914) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (107414) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (107414) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (107914) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (107914) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (108414) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (108414) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (108914) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (108914) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (109414) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (109414) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (109914) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (109914) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (110414) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (110414) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (110914) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (110914) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (111414) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (111414) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (111914) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (111914) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (112414) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (112414) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (112914) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (112914) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (113414) Prueba: El valor crudo es el siguiente para Bx: 253[0m
+[0;32mI (113414) Prueba: El valor procesado es el siguiente para Bx: -4mT[0m
+[0;32mI (113914) Prueba: El valor crudo es el siguiente para Bx: 253[0m
+[0;32mI (113914) Prueba: El valor procesado es el siguiente para Bx: -4mT[0m
+[0;32mI (114414) Prueba: El valor crudo es el siguiente para Bx: 253[0m
+[0;32mI (114414) Prueba: El valor procesado es el siguiente para Bx: -4mT[0m
+[0;32mI (114914) Prueba: El valor crudo es el siguiente para Bx: 253[0m
+[0;32mI (114914) Prueba: El valor procesado es el siguiente para Bx: -4mT[0m
+[0;32mI (115414) Prueba: El valor crudo es el siguiente para Bx: 253[0m
+[0;32mI (115414) Prueba: El valor procesado es el siguiente para Bx: -4mT[0m
+[0;32mI (115914) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (115914) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (116414) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (116414) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (116914) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (116914) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (117414) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (117414) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (117914) Prueba: El valor crudo es el siguiente para Bx: 253[0m
+[0;32mI (117914) Prueba: El valor procesado es el siguiente para Bx: -4mT[0m
+[0;32mI (118414) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (118414) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (118914) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (118914) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (119414) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (119414) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (119914) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (119914) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (120414) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (120414) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (120914) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (120914) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (121414) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (121414) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (121914) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (121914) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (122414) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (122414) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (122914) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (122914) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (123414) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (123414) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (123914) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (123914) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (124414) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (124414) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (124914) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (124914) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (125414) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (125414) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (125914) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (125914) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (126414) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (126414) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (126914) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (126914) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (127414) Prueba: El valor crudo es el siguiente para Bx: 255[0m
+[0;32mI (127414) Prueba: El valor procesado es el siguiente para Bx: -1mT[0m
+[0;32mI (127914) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (127914) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (128414) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (128414) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (128914) Prueba: El valor crudo es el siguiente para Bx: 250[0m
+[0;32mI (128914) Prueba: El valor procesado es el siguiente para Bx: -9mT[0m
+[0;32mI (129414) Prueba: El valor crudo es el siguiente para Bx: 245[0m
+[0;32mI (129414) Prueba: El valor procesado es el siguiente para Bx: -17mT[0m
+[0;32mI (129914) Prueba: El valor crudo es el siguiente para Bx: 237[0m
+[0;32mI (129914) Prueba: El valor procesado es el siguiente para Bx: -29mT[0m
+[0;32mI (130414) Prueba: El valor crudo es el siguiente para Bx: 229[0m
+[0;32mI (130414) Prueba: El valor procesado es el siguiente para Bx: -42mT[0m
+[0;32mI (130914) Prueba: El valor crudo es el siguiente para Bx: 222[0m
+[0;32mI (130914) Prueba: El valor procesado es el siguiente para Bx: -53mT[0m
+[0;32mI (131414) Prueba: El valor crudo es el siguiente para Bx: 218[0m
+[0;32mI (131414) Prueba: El valor procesado es el siguiente para Bx: -59mT[0m
+[0;32mI (131914) Prueba: El valor crudo es el siguiente para Bx: 214[0m
+[0;32mI (131914) Prueba: El valor procesado es el siguiente para Bx: -65mT[0m
+[0;32mI (132414) Prueba: El valor crudo es el siguiente para Bx: 213[0m
+[0;32mI (132414) Prueba: El valor procesado es el siguiente para Bx: -67mT[0m
+[0;32mI (132914) Prueba: El valor crudo es el siguiente para Bx: 210[0m
+[0;32mI (132914) Prueba: El valor procesado es el siguiente para Bx: -71mT[0m
+[0;32mI (133414) Prueba: El valor crudo es el siguiente para Bx: 208[0m
+[0;32mI (133414) Prueba: El valor procesado es el siguiente para Bx: -74mT[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x403774c0  PS      : 0x00060034  A0      : 0x803776a1  A1      : 0x3fc932c0  
+A2      : 0x3fc9a5d4  A3      : 0x00000000  A4      : 0x000000e0  A5      : 0x3fc99070  
+A6      : 0x00060323  A7      : 0x3fc9a8f8  A8      : 0x60013000  A9      : 0x00060323  
+A10     : 0x00000001  A11     : 0x3fc9a984  A12     : 0x00000000  A13     : 0x3fc99090  
+A14     : 0x00060323  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+Core  0 was running in ISR context:
+EPC1    : 0x4201a2cf  EPC2    : 0x00000000  EPC3    : 0x00000000  EPC4    : 0x403774c0
+
+
+Backtrace: 0x403774bd:0x3fc932c0 0x4037769e:0x3fc932f0 0x403762fd:0x3fc93330 0x40377175:0x3fc93350 0x4200af74:0x3fc99120 0x4200b14c:0x3fc99150 0x4200b213:0x3fc99190 0x4200bdc3:0x3fc991c0 0x420085a2:0x3fc99230 0x4201b8cf:0x3fc992a0 0x4037a9e1:0x3fc992d0
+
+
+Core  1 register dump:
+PC      : 0x40378636  PS      : 0x00060734  A0      : 0x82002db1  A1      : 0x3fc9a130  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x3fc97000  A5      : 0x3fc96fe0  
+A6      : 0x403783f8  A7      : 0x00000001  A8      : 0x8200d94e  A9      : 0x3fc9a0f0  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0x3fc96fe0  A13     : 0x3fc96fb0  
+A14     : 0x00000001  A15     : 0x3fc9a2f8  SAR     : 0x00000000  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40378633:0x3fc9a130 0x42002dae:0x3fc9a150 0x4037b925:0x3fc9a170 0x4037a9e1:0x3fc9a190
+
+
+
+
+ELF file SHA256: 867f65b82
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375860
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (32) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time May 29 2024 18:35:39[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e144h ( 57668) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001e16c vaddr=3fc92400 size=01each (  7852) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1c180h (115072) map[0m
+[0;32mI (152) esp_image: segment 3: paddr=0003c1a8 vaddr=3fc942ac size=00a34h (  2612) load[0m
+[0;32mI (153) esp_image: segment 4: paddr=0003cbe4 vaddr=40374000 size=0e398h ( 58264) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (201) cpu_start: Pro cpu start user code[0m
+[0;32mI (201) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (201) cpu_start: Application information:[0m
+[0;32mI (204) cpu_start: Project name:     lectura_encoders[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (214) cpu_start: Compile time:     May 29 2024 18:35:37[0m
+[0;32mI (220) cpu_start: ELF file SHA256:  867f65b82...[0m
+[0;32mI (225) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (230) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (235) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (240) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FC955D0 len 00054140 (336 KiB): RAM[0m
+[0;32mI (258) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (277) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (287) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (292) spi_flash: flash io: opi_str[0m
+[0;33mW (296) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (316) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (344) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (354) Prueba: I2C configurado[0m
+[0;32mI (354) Prueba: Handle configurado[0m
+[0;32mI (354) Prueba: Reset handle configurado[0m
+[0;32mI (404) Prueba: Encoder Reiniciado[0m
+[0;32mI (404) Prueba: Prueba realizada[0m
+[0;32mI (404) Prueba: Al parecer se ha configurado el sensor de manera exitosa[0m
+[0;32mI (404) Prueba: El valor crudo es el siguiente para Bx: 208[0m
+[0;32mI (414) Prueba: El valor procesado es el siguiente para Bx: -74mT[0m
+[0;32mI (914) Prueba: El valor crudo es el siguiente para Bx: 208[0m
+[0;32mI (914) Prueba: El valor procesado es el siguiente para Bx: -74mT[0m
+[0;32mI (1414) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (1414) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (1914) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (1914) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (2414) Prueba: El valor crudo es el siguiente para Bx: 208[0m
+[0;32mI (2414) Prueba: El valor procesado es el siguiente para Bx: -74mT[0m
+[0;32mI (2914) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (2914) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (3414) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (3414) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (3914) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (3914) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (4414) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (4414) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (4914) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (4914) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (5414) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (5414) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (5914) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (5914) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (6414) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (6414) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (6914) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (6914) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (7414) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (7414) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (7914) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (7914) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (8414) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (8414) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (8914) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (8914) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (9414) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (9414) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (9914) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (9914) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (10414) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (10414) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (10914) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (10914) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (11414) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (11414) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (11914) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (11914) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (12414) Prueba: El valor crudo es el siguiente para Bx: 207[0m
+[0;32mI (12414) Prueba: El valor procesado es el siguiente para Bx: -76mT[0m
+[0;32mI (12914) Prueba: El valor crudo es el siguiente para Bx: 199[0m
+[0;32mI (12914) Prueba: El valor procesado es el siguiente para Bx: -88mT[0m
+[0;32mI (13414) Prueba: El valor crudo es el siguiente para Bx: 196[0m
+[0;32mI (13414) Prueba: El valor procesado es el siguiente para Bx: -93mT[0m
+[0;32mI (13914) Prueba: El valor crudo es el siguiente para Bx: 195[0m
+[0;32mI (13914) Prueba: El valor procesado es el siguiente para Bx: -95mT[0m
+[0;32mI (14414) Prueba: El valor crudo es el siguiente para Bx: 194[0m
+[0;32mI (14414) Prueba: El valor procesado es el siguiente para Bx: -96mT[0m
+[0;32mI (14914) Prueba: El valor crudo es el siguiente para Bx: 194[0m
+[0;32mI (14914) Prueba: El valor procesado es el siguiente para Bx: -96mT[0m
+[0;32mI (15414) Prueba: El valor crudo es el siguiente para Bx: 194[0m
+[0;32mI (15414) Prueba: El valor procesado es el siguiente para Bx: -96mT[0m
+[0;32mI (15914) Prueba: El valor crudo es el siguiente para Bx: 187[0m
+[0;32mI (15914) Prueba: El valor procesado es el siguiente para Bx: -107mT[0m
+[0;32mI (16414) Prueba: El valor crudo es el siguiente para Bx: 182[0m
+[0;32mI (16414) Prueba: El valor procesado es el siguiente para Bx: -115mT[0m
+[0;32mI (16914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (16914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (17414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (17414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (17914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (17914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (18414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (18414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (18914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (18914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (19414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (19414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (19914) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (19914) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (20414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (20414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (20914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (20914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (21414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (21414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (21914) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (21914) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (22414) Prueba: El valor crudo es el siguiente para Bx: 180[0m
+[0;32mI (22414) Prueba: El valor procesado es el siguiente para Bx: -118mT[0m
+[0;32mI (22914) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (22914) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (23414) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (23414) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (23914) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (23914) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (24414) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (24414) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (24914) Prueba: El valor crudo es el siguiente para Bx: 182[0m
+[0;32mI (24914) Prueba: El valor procesado es el siguiente para Bx: -115mT[0m
+[0;32mI (25414) Prueba: El valor crudo es el siguiente para Bx: 182[0m
+[0;32mI (25414) Prueba: El valor procesado es el siguiente para Bx: -115mT[0m
+[0;32mI (25914) Prueba: El valor crudo es el siguiente para Bx: 184[0m
+[0;32mI (25914) Prueba: El valor procesado es el siguiente para Bx: -112mT[0m
+[0;32mI (26414) Prueba: El valor crudo es el siguiente para Bx: 183[0m
+[0;32mI (26414) Prueba: El valor procesado es el siguiente para Bx: -113mT[0m
+[0;32mI (26914) Prueba: El valor crudo es el siguiente para Bx: 181[0m
+[0;32mI (26914) Prueba: El valor procesado es el siguiente para Bx: -117mT[0m
+[0;32mI (27414) Prueba: El valor crudo es el siguiente para Bx: 179[0m
+[0;32mI (27414) Prueba: El valor procesado es el siguiente para Bx: -120mT[0m
+[0;32mI (27914) Prueba: El valor crudo es el siguiente para Bx: 255[0m
+[0;32mI (27914) Prueba: El valor procesado es el siguiente para Bx: -1mT[0m
+[0;32mI (28414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (28414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (28914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (28914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (29414) Prueba: El valor crudo es el siguiente para Bx: 176[0m
+[0;32mI (29414) Prueba: El valor procesado es el siguiente para Bx: -124mT[0m
+[0;32mI (29914) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (29914) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (30414) Prueba: El valor crudo es el siguiente para Bx: 97[0m
+[0;32mI (30414) Prueba: El valor procesado es el siguiente para Bx: 151mT[0m
+[0;32mI (30914) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (30914) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (31414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (31414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (31914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (31914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (32414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (32414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (32914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (32914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (33414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (33414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (33914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (33914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (34414) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (34414) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (34914) Prueba: El valor crudo es el siguiente para Bx: 177[0m
+[0;32mI (34914) Prueba: El valor procesado es el siguiente para Bx: -123mT[0m
+[0;32mI (35414) Prueba: El valor crudo es el siguiente para Bx: 190[0m
+[0;32mI (35414) Prueba: El valor procesado es el siguiente para Bx: -102mT[0m
+[0;32mI (35914) Prueba: El valor crudo es el siguiente para Bx: 178[0m
+[0;32mI (35914) Prueba: El valor procesado es el siguiente para Bx: -121mT[0m
+[0;32mI (36414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (36414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (36914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (36914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (37414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (37414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (37914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (37914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (38414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (38414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (38914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (38914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (39414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (39414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (39914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (39914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (40414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (40414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (40914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (40914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (41414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (41414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (41914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (41914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (42414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (42414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (42914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (42914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (43414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (43414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (43914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (43914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (44414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (44414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (44914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (44914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (45414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (45414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (45914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (45914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (46414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (46414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (46914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (46914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (47414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (47414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (47914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (47914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (48414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (48414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (48914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (48914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (49414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (49414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (49914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (49914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (50414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (50414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (50914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (50914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (51414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (51414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (51914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (51914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (52414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (52414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (52914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (52914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (53414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (53414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (53914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (53914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (54414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (54414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (54914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (54914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (55414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (55414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (55914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (55914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (56414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (56414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (56914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (56914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (57414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (57414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (57914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (57914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (58414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (58414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (58914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (58914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (59414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (59414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (59914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (59914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (60414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (60414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (60914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (60914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (61414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (61414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (61914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (61914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (62414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (62414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (62914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (62914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (63414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (63414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (63914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (63914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (64414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (64414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (64914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (64914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (65414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (65414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (65914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (65914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (66414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (66414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (66914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (66914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (67414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (67414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (67914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (67914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (68414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (68414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (68914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (68914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (69414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (69414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (69914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (69914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (70414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (70414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (70914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (70914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (71414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (71414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (71914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (71914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (72414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (72414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (72914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (72914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (73414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (73414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (73914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (73914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (74414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (74414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (74914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (74914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (75414) Prueba: El valor crudo es el siguiente para Bx: 255[0m
+[0;32mI (75414) Prueba: El valor procesado es el siguiente para Bx: -1mT[0m
+[0;32mI (75914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (75914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (76414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (76414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (76914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (76914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (77414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (77414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (77914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (77914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (78414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (78414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (78914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (78914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (79414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (79414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (79914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (79914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (80414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (80414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (80914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (80914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (81414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (81414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (81914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (81914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (82414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (82414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (82914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (82914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (83414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (83414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (83914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (83914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (84414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (84414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (84914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (84914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (85414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (85414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (85914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (85914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (86414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (86414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (86914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (86914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (87414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (87414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (87914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (87914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (88414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (88414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (88914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (88914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (89414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (89414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (89914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (89914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (90414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (90414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (90914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (90914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (91414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (91414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (91914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (91914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (92414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (92414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (92914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (92914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (93414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (93414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (93914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (93914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (94414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (94414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (94914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (94914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (95414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (95414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (95914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (95914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (96414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (96414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (96914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (96914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (97414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (97414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (97914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (97914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (98414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (98414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (98914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (98914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (99414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (99414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (99914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (99914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x403774c3  PS      : 0x00060034  A0      : 0x803776a1  A1      : 0x3fc932c0  
+A2      : 0x3fc9a5d4  A3      : 0x00000000  A4      : 0x000000e0  A5      : 0x3fc99070  
+A6      : 0x00060323  A7      : 0x3fc9a8f8  A8      : 0x6500c211  A9      : 0x00060323  
+A10     : 0x00000001  A11     : 0x3fc9a984  A12     : 0x00000000  A13     : 0x3fc99090  
+A14     : 0x00060323  A15     : 0x00000000  SAR     : 0x00000020  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+Core  0 was running in ISR context:
+EPC1    : 0x4201a2cf  EPC2    : 0x00000000  EPC3    : 0x00000000  EPC4    : 0x403774c3
+
+
+Backtrace: 0x403774c0:0x3fc932c0 0x4037769e:0x3fc932f0 0x403762fd:0x3fc93330 0x40377175:0x3fc93350 0x4200af71:0x3fc99120 0x4200b14c:0x3fc99150 0x4200b213:0x3fc99190 0x4200bdc3:0x3fc991c0 0x420085a2:0x3fc99230 0x4201b8cf:0x3fc992a0 0x4037a9e1:0x3fc992d0
+
+
+Core  1 register dump:
+PC      : 0x40378636  PS      : 0x00060734  A0      : 0x82002db1  A1      : 0x3fc9a130  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x3fc97000  A5      : 0x3fc96fe0  
+A6      : 0x403783f8  A7      : 0x00000001  A8      : 0x8200d94e  A9      : 0x3fc9a0f0  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0x3fc96fe0  A13     : 0x3fc96fb0  
+A14     : 0x00000001  A15     : 0x3fc9a2f8  SAR     : 0x00000000  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40378633:0x3fc9a130 0x42002dae:0x3fc9a150 0x4037b925:0x3fc9a170 0x4037a9e1:0x3fc9a190
+
+
+
+
+ELF file SHA256: 867f65b82
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375860
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (32) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time May 29 2024 18:35:39[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e144h ( 57668) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001e16c vaddr=3fc92400 size=01each (  7852) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1c180h (115072) map[0m
+[0;32mI (152) esp_image: segment 3: paddr=0003c1a8 vaddr=3fc942ac size=00a34h (  2612) load[0m
+[0;32mI (153) esp_image: segment 4: paddr=0003cbe4 vaddr=40374000 size=0e398h ( 58264) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (201) cpu_start: Pro cpu start user code[0m
+[0;32mI (201) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (201) cpu_start: Application information:[0m
+[0;32mI (204) cpu_start: Project name:     lectura_encoders[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (214) cpu_start: Compile time:     May 29 2024 18:35:37[0m
+[0;32mI (220) cpu_start: ELF file SHA256:  867f65b82...[0m
+[0;32mI (225) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (230) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (235) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (240) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FC955D0 len 00054140 (336 KiB): RAM[0m
+[0;32mI (258) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (277) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (287) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (292) spi_flash: flash io: opi_str[0m
+[0;33mW (296) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (316) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (344) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (354) Prueba: I2C configurado[0m
+[0;32mI (354) Prueba: Handle configurado[0m
+[0;32mI (354) Prueba: Reset handle configurado[0m
+[0;32mI (404) Prueba: Encoder Reiniciado[0m
+[0;32mI (404) Prueba: Prueba realizada[0m
+[0;32mI (404) Prueba: Al parecer se ha configurado el sensor de manera exitosa[0m
+[0;32mI (404) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (1414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (1414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (1914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (1914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (2414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (2414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (2914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (2914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (3414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (3414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (3914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (3914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (4414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (4414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (4914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (4914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (5414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (5414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (5914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (5914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (6414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (6414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (6914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (6914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (7414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (7414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (7914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (7914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (8414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (8414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (8914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (8914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (9414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (9414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (9914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (9914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (10414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (10414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (10914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (10914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (11414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (11414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (11914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (11914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (12414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (12414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (12914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (12914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (13414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (13414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (13914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (13914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (14414) Prueba: El valor crudo es el siguiente para Bx: 1[0m
+[0;32mI (14414) Prueba: El valor procesado es el siguiente para Bx: 1mT[0m
+[0;32mI (14914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (14914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (15414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (15414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (15914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (15914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (16414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (16414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (16914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (16914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (17414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (17414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (17914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (17914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (18414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (18414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (18914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (18914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (19414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (19414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (19914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (19914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (20414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (20414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (20914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (20914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (21414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (21414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (21914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (21914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (22414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (22414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (22914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (22914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (23414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (23414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (23914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (23914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (24414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (24414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (24914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (24914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (25414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (25414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (25914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (25914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (26414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (26414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (26914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (26914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (27414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (27414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (27914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (27914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (28414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (28414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (28914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (28914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (29414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (29414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (29914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (29914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (30414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (30414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (30914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (30914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (31414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (31414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (31914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (31914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (32414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (32414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (32914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (32914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (33414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (33414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (33914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (33914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (34414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (34414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (34914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (34914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (35414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (35414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (35914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (35914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (36414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (36414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (36914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (36914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (37414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (37414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (37914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (37914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (38414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (38414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (38914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (38914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (39414) Prueba: El valor crudo es el siguiente para Bx: 255[0m
+[0;32mI (39414) Prueba: El valor procesado es el siguiente para Bx: -1mT[0m
+[0;32mI (39914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (39914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (40414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (40414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (40914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (40914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (41414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (41414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (41914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (41914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (42414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (42414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (42914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (42914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (43414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (43414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (43914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (43914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (44414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (44414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (44914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (44914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (45414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (45414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (45914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (45914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (46414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (46414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (46914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (46914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (47414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (47414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (47914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (47914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (48414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (48414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (48914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (48914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (49414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (49414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (49914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (49914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (50414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (50414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (50914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (50914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (51414) Prueba: El valor crudo es el siguiente para Bx: 5[0m
+[0;32mI (51414) Prueba: El valor procesado es el siguiente para Bx: 7mT[0m
+[0;32mI (51914) Prueba: El valor crudo es el siguiente para Bx: 16[0m
+[0;32mI (51914) Prueba: El valor procesado es el siguiente para Bx: 24mT[0m
+[0;32mI (52414) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (52414) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (52914) Prueba: El valor crudo es el siguiente para Bx: 5[0m
+[0;32mI (52914) Prueba: El valor procesado es el siguiente para Bx: 7mT[0m
+[0;32mI (53414) Prueba: El valor crudo es el siguiente para Bx: 250[0m
+[0;32mI (53414) Prueba: El valor procesado es el siguiente para Bx: -9mT[0m
+[0;32mI (53914) Prueba: El valor crudo es el siguiente para Bx: 4[0m
+[0;32mI (53914) Prueba: El valor procesado es el siguiente para Bx: 6mT[0m
+[0;32mI (54414) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (54414) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (54914) Prueba: El valor crudo es el siguiente para Bx: 254[0m
+[0;32mI (54914) Prueba: El valor procesado es el siguiente para Bx: -3mT[0m
+[0;32mI (55414) Prueba: El valor crudo es el siguiente para Bx: 253[0m
+[0;32mI (55414) Prueba: El valor procesado es el siguiente para Bx: -4mT[0m
+[0;32mI (55914) Prueba: El valor crudo es el siguiente para Bx: 255[0m
+[0;32mI (55914) Prueba: El valor procesado es el siguiente para Bx: -1mT[0m
+[0;32mI (56414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (56414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (56914) Prueba: El valor crudo es el siguiente para Bx: 255[0m
+[0;32mI (56914) Prueba: El valor procesado es el siguiente para Bx: -1mT[0m
+[0;32mI (57414) Prueba: El valor crudo es el siguiente para Bx: 254[0m
+[0;32mI (57414) Prueba: El valor procesado es el siguiente para Bx: -3mT[0m
+[0;32mI (57914) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (57914) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (58414) Prueba: El valor crudo es el siguiente para Bx: 249[0m
+[0;32mI (58414) Prueba: El valor procesado es el siguiente para Bx: -10mT[0m
+[0;32mI (58914) Prueba: El valor crudo es el siguiente para Bx: 252[0m
+[0;32mI (58914) Prueba: El valor procesado es el siguiente para Bx: -6mT[0m
+[0;32mI (59414) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (59414) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (59914) Prueba: El valor crudo es el siguiente para Bx: 253[0m
+[0;32mI (59914) Prueba: El valor procesado es el siguiente para Bx: -4mT[0m
+[0;32mI (60414) Prueba: El valor crudo es el siguiente para Bx: 254[0m
+[0;32mI (60414) Prueba: El valor procesado es el siguiente para Bx: -3mT[0m
+[0;32mI (60914) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (60914) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (61414) Prueba: El valor crudo es el siguiente para Bx: 248[0m
+[0;32mI (61414) Prueba: El valor procesado es el siguiente para Bx: -12mT[0m
+[0;32mI (61914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (61914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (62414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (62414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (62914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (62914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (63414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (63414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (63914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (63914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (64414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (64414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (64914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (64914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (65414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (65414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (65914) Prueba: El valor crudo es el siguiente para Bx: 253[0m
+[0;32mI (65914) Prueba: El valor procesado es el siguiente para Bx: -4mT[0m
+[0;32mI (66414) Prueba: El valor crudo es el siguiente para Bx: 2[0m
+[0;32mI (66414) Prueba: El valor procesado es el siguiente para Bx: 3mT[0m
+[0;32mI (66914) Prueba: El valor crudo es el siguiente para Bx: 3[0m
+[0;32mI (66914) Prueba: El valor procesado es el siguiente para Bx: 4mT[0m
+[0;32mI (67414) Prueba: El valor crudo es el siguiente para Bx: 5[0m
+[0;32mI (67414) Prueba: El valor procesado es el siguiente para Bx: 7mT[0m
+[0;32mI (67914) Prueba: El valor crudo es el siguiente para Bx: 254[0m
+[0;32mI (67914) Prueba: El valor procesado es el siguiente para Bx: -3mT[0m
+[0;32mI (68414) Prueba: El valor crudo es el siguiente para Bx: 242[0m
+[0;32mI (68414) Prueba: El valor procesado es el siguiente para Bx: -21mT[0m
+[0;32mI (68914) Prueba: El valor crudo es el siguiente para Bx: 243[0m
+[0;32mI (68914) Prueba: El valor procesado es el siguiente para Bx: -20mT[0m
+[0;32mI (69414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (69414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (69914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (69914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (70414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (70414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (70914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (70914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (71414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (71414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (71914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (71914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (72414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (72414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (72914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (72914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (73414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (73414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (73914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (73914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (74414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (74414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (74914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (74914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (75414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (75414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (75914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (75914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (76414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (76414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (76914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (76914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (77414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (77414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (77914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (77914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (78414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (78414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (78914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (78914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (79414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (79414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (79914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (79914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (80414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (80414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (80914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (80914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (81414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (81414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (81914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (81914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (82414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (82414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (82914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (82914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (83414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (83414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (83914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (83914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (84414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (84414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (84914) Prueba: El valor crudo es el siguiente para Bx: 255[0m
+[0;32mI (84914) Prueba: El valor procesado es el siguiente para Bx: -1mT[0m
+[0;32mI (85414) Prueba: El valor crudo es el siguiente para Bx: 250[0m
+[0;32mI (85414) Prueba: El valor procesado es el siguiente para Bx: -9mT[0m
+[0;32mI (85914) Prueba: El valor crudo es el siguiente para Bx: 254[0m
+[0;32mI (85914) Prueba: El valor procesado es el siguiente para Bx: -3mT[0m
+[0;32mI (86414) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (86414) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (86914) Prueba: El valor crudo es el siguiente para Bx: 2[0m
+[0;32mI (86914) Prueba: El valor procesado es el siguiente para Bx: 3mT[0m
+[0;32mI (87414) Prueba: El valor crudo es el siguiente para Bx: 11[0m
+[0;32mI (87414) Prueba: El valor procesado es el siguiente para Bx: 17mT[0m
+[0;32mI (87914) Prueba: El valor crudo es el siguiente para Bx: 19[0m
+[0;32mI (87914) Prueba: El valor procesado es el siguiente para Bx: 29mT[0m
+[0;32mI (88414) Prueba: El valor crudo es el siguiente para Bx: 17[0m
+[0;32mI (88414) Prueba: El valor procesado es el siguiente para Bx: 26mT[0m
+[0;32mI (88914) Prueba: El valor crudo es el siguiente para Bx: 10[0m
+[0;32mI (88914) Prueba: El valor procesado es el siguiente para Bx: 15mT[0m
+[0;32mI (89414) Prueba: El valor crudo es el siguiente para Bx: 254[0m
+[0;32mI (89414) Prueba: El valor procesado es el siguiente para Bx: -3mT[0m
+[0;32mI (89914) Prueba: El valor crudo es el siguiente para Bx: 228[0m
+[0;32mI (89914) Prueba: El valor procesado es el siguiente para Bx: -43mT[0m
+[0;32mI (90414) Prueba: El valor crudo es el siguiente para Bx: 228[0m
+[0;32mI (90414) Prueba: El valor procesado es el siguiente para Bx: -43mT[0m
+[0;32mI (90914) Prueba: El valor crudo es el siguiente para Bx: 221[0m
+[0;32mI (90914) Prueba: El valor procesado es el siguiente para Bx: -54mT[0m
+[0;32mI (91414) Prueba: El valor crudo es el siguiente para Bx: 237[0m
+[0;32mI (91414) Prueba: El valor procesado es el siguiente para Bx: -29mT[0m
+[0;32mI (91914) Prueba: El valor crudo es el siguiente para Bx: 250[0m
+[0;32mI (91914) Prueba: El valor procesado es el siguiente para Bx: -9mT[0m
+[0;32mI (92414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (92414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (92914) Prueba: El valor crudo es el siguiente para Bx: 8[0m
+[0;32mI (92914) Prueba: El valor procesado es el siguiente para Bx: 12mT[0m
+[0;32mI (93414) Prueba: El valor crudo es el siguiente para Bx: 248[0m
+[0;32mI (93414) Prueba: El valor procesado es el siguiente para Bx: -12mT[0m
+[0;32mI (93914) Prueba: El valor crudo es el siguiente para Bx: 7[0m
+[0;32mI (93914) Prueba: El valor procesado es el siguiente para Bx: 10mT[0m
+[0;32mI (94414) Prueba: El valor crudo es el siguiente para Bx: 1[0m
+[0;32mI (94414) Prueba: El valor procesado es el siguiente para Bx: 1mT[0m
+[0;32mI (94914) Prueba: El valor crudo es el siguiente para Bx: 223[0m
+[0;32mI (94914) Prueba: El valor procesado es el siguiente para Bx: -51mT[0m
+[0;32mI (95414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (95414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (95914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (95914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (96414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (96414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (96914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (96914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (97414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (97414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (97914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (97914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (98414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (98414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (98914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (98914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (99414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (99414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (99914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (99914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (100414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (100414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (100914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (100914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (101414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (101414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (101914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (101914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (102414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (102414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (102914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (102914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (103414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (103414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (103914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (103914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (104414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (104414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (104914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (104914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (105414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (105414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (105914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (105914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (106414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (106414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (106914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (106914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (107414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (107414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (107914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (107914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (108414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (108414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (108914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (108914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (109414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (109414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (109914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (109914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (110414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (110414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (110914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (110914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (111414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (111414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (111914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (111914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (112414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (112414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (112914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (112914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (113414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (113414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (113914) Prueba: El valor crudo es el siguiente para Bx: 255[0m
+[0;32mI (113914) Prueba: El valor procesado es el siguiente para Bx: -1mT[0m
+[0;32mI (114414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (114414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (114914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (114914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (115414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (115414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (115914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (115914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (116414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (116414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (116914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (116914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (117414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (117414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (117914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (117914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (118414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (118414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (118914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (118914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (119414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (119414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (119914) Prueba: El valor crudo es el siguiente para Bx: 1[0m
+[0;32mI (119914) Prueba: El valor procesado es el siguiente para Bx: 1mT[0m
+[0;32mI (120414) Prueba: El valor crudo es el siguiente para Bx: 251[0m
+[0;32mI (120414) Prueba: El valor procesado es el siguiente para Bx: -7mT[0m
+[0;32mI (120914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (120914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (121414) Prueba: El valor crudo es el siguiente para Bx: 1[0m
+[0;32mI (121414) Prueba: El valor procesado es el siguiente para Bx: 1mT[0m
+[0;32mI (121914) Prueba: El valor crudo es el siguiente para Bx: 253[0m
+[0;32mI (121914) Prueba: El valor procesado es el siguiente para Bx: -4mT[0m
+[0;32mI (122414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (122414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (122914) Prueba: El valor crudo es el siguiente para Bx: 255[0m
+[0;32mI (122914) Prueba: El valor procesado es el siguiente para Bx: -1mT[0m
+[0;32mI (123414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (123414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (123914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (123914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (124414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (124414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (124914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (124914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (125414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (125414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (125914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (125914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (126414) Prueba: El valor crudo es el siguiente para Bx: 255[0m
+[0;32mI (126414) Prueba: El valor procesado es el siguiente para Bx: -1mT[0m
+[0;32mI (126914) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (126914) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
+[0;32mI (127414) Prueba: El valor crudo es el siguiente para Bx: 0[0m
+[0;32mI (127414) Prueba: El valor procesado es el siguiente para Bx: 0mT[0m
