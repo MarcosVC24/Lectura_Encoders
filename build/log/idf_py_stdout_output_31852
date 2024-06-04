@@ -1,0 +1,630 @@
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c02002ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400559dd
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May 29 2024 18:35:39[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e064h ( 57444) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001e08c vaddr=3fc92400 size=01f8ch (  8076) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1c0bch (114876) map[0m
+[0;32mI (153) esp_image: segment 3: paddr=0003c0e4 vaddr=3fc9438c size=00954h (  2388) load[0m
+[0;32mI (154) esp_image: segment 4: paddr=0003ca40 vaddr=40374000 size=0e398h ( 58264) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (192) cpu_start: Multicore app[0m
+[0;32mI (201) cpu_start: Pro cpu start user code[0m
+[0;32mI (201) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (201) cpu_start: Application information:[0m
+[0;32mI (204) cpu_start: Project name:     lectura_encoders[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (214) cpu_start: Compile time:     May 29 2024 18:35:37[0m
+[0;32mI (220) cpu_start: ELF file SHA256:  c408eb2df...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (235) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (240) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FC955D0 len 00054140 (336 KiB): RAM[0m
+[0;32mI (258) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (277) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (288) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (292) spi_flash: flash io: opi_str[0m
+[0;33mW (297) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (317) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (344) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (354) Prueba: I2C configurado[0m
+[0;32mI (354) Prueba: Handle configurado[0m
+[0;32mI (354) Prueba: Reset handle configurado[0m
+[0;32mI (404) Prueba: Encoder Reiniciado[0m
+[0;32mI (404) Prueba: Al parecer se ha configurado el sensor de manera exitosa[0m
+[0;32mI (404) TAG: La dirección es: 0[0m
+[0;32mI (404) TAG: La dirección es: 31[0m
+[0;32mI (424) TAG: La dirección es: 128[0m
+[0;32mI (424) TAG: La dirección es: 159[0m
+[0;32mI (444) TAG: La dirección es: 0[0m
+[0;32mI (444) TAG: La dirección es: 31[0m
+[0;32mI (454) TAG: La dirección es: 128[0m
+[0;32mI (464) TAG: La dirección es: 159[0m
+[0;32mI (474) TAG: La dirección es: 0[0m
+[0;32mI (484) TAG: La dirección es: 31[0m
+[0;32mI (494) TAG: La dirección es: 128[0m
+[0;32mI (504) TAG: La dirección es: 159[0m
+[0;32mI (514) TAG: La dirección es: 0[0m
+[0;32mI (514) TAG: La dirección es: 31[0m
+[0;32mI (534) TAG: La dirección es: 128[0m
+[0;32mI (534) TAG: La dirección es: 159[0m
+[0;32mI (554) TAG: La dirección es: 0[0m
+[0;32mI (554) TAG: La dirección es: 31[0m
+[0;32mI (564) TAG: La dirección es: 128[0m
+[0;32mI (574) TAG: La dirección es: 159[0m
+[0;32mI (584) TAG: La dirección es: 0[0m
+[0;32mI (594) TAG: La dirección es: 31[0m
+[0;32mI (604) TAG: La dirección es: 128[0m
+[0;32mI (614) TAG: La dirección es: 159[0m
+[0;32mI (624) TAG: La dirección es: 0[0m
+[0;32mI (624) TAG: La dirección es: 31[0m
+[0;32mI (644) TAG: La dirección es: 128[0m
+[0;32mI (644) TAG: La dirección es: 159[0m
+[0;32mI (664) TAG: La dirección es: 0[0m
+[0;32mI (664) TAG: La dirección es: 31[0m
+[0;32mI (674) TAG: La dirección es: 128[0m
+[0;32mI (684) TAG: La dirección es: 159[0m
+[0;32mI (694) TAG: La dirección es: 0[0m
+[0;32mI (704) TAG: La dirección es: 31[0m
+[0;32mI (714) TAG: La dirección es: 128[0m
+[0;32mI (724) TAG: La dirección es: 159[0m
+[0;32mI (734) TAG: La dirección es: 0[0m
+[0;32mI (734) TAG: La dirección es: 31[0m
+[0;32mI (754) TAG: La dirección es: 128[0m
+[0;32mI (754) TAG: La dirección es: 159[0m
+[0;32mI (774) TAG: La dirección es: 0[0m
+[0;32mI (774) TAG: La dirección es: 31[0m
+[0;32mI (794) TAG: La dirección es: 128[0m
+[0;32mI (794) TAG: La dirección es: 159[0m
+[0;32mI (804) TAG: La dirección es: 0[0m
+[0;32mI (814) TAG: La dirección es: 31[0m
+[0;32mI (824) TAG: La dirección es: 128[0m
+[0;32mI (834) TAG: La dirección es: 159[0m
+[0;32mI (844) TAG: La dirección es: 0[0m
+[0;32mI (844) TAG: La dirección es: 31[0m
+[0;32mI (864) TAG: La dirección es: 128[0m
+[0;32mI (864) TAG: La dirección es: 159[0m
+[0;32mI (884) TAG: La dirección es: 0[0m
+[0;32mI (884) TAG: La dirección es: 31[0m
+[0;32mI (904) TAG: La dirección es: 128[0m
+[0;32mI (904) TAG: La dirección es: 159[0m
+[0;32mI (914) TAG: La dirección es: 0[0m
+[0;32mI (924) TAG: La dirección es: 31[0m
+[0;32mI (934) TAG: La dirección es: 128[0m
+[0;32mI (944) TAG: La dirección es: 159[0m
+[0;32mI (954) TAG: La dirección es: 0[0m
+[0;32mI (954) TAG: La dirección es: 31[0m
+[0;32mI (974) TAG: La dirección es: 128[0m
+[0;32mI (974) TAG: La dirección es: 159[0m
+[0;32mI (994) TAG: La dirección es: 0[0m
+[0;32mI (994) TAG: La dirección es: 31[0m
+[0;32mI (1014) TAG: La dirección es: 128[0m
+[0;32mI (1014) TAG: La dirección es: 159[0m
+[0;32mI (1024) TAG: La dirección es: 0[0m
+[0;32mI (1034) TAG: La dirección es: 31[0m
+[0;32mI (1044) TAG: La dirección es: 128[0m
+[0;32mI (1054) TAG: La dirección es: 159[0m
+[0;32mI (1064) TAG: La dirección es: 0[0m
+[0;32mI (1074) TAG: La dirección es: 31[0m
+[0;32mI (1084) TAG: La dirección es: 128[0m
+[0;32mI (1084) TAG: La dirección es: 159[0m
+[0;32mI (1104) TAG: La dirección es: 0[0m
+[0;32mI (1104) TAG: La dirección es: 31[0m
+[0;32mI (1124) TAG: La dirección es: 128[0m
+[0;32mI (1124) TAG: La dirección es: 159[0m
+[0;32mI (1134) TAG: La dirección es: 0[0m
+[0;32mI (1144) TAG: La dirección es: 31[0m
+[0;32mI (1154) TAG: La dirección es: 128[0m
+[0;32mI (1164) TAG: La dirección es: 159[0m
+[0;32mI (1174) TAG: La dirección es: 0[0m
+[0;32mI (1184) TAG: La dirección es: 31[0m
+[0;32mI (1194) TAG: La dirección es: 128[0m
+[0;32mI (1194) TAG: La dirección es: 159[0m
+[0;32mI (1214) TAG: La dirección es: 0[0m
+[0;32mI (1214) TAG: La dirección es: 31[0m
+[0;32mI (1234) TAG: La dirección es: 128[0m
+[0;32mI (1234) TAG: La dirección es: 159[0m
+[0;32mI (1244) TAG: La dirección es: 0[0m
+[0;32mI (1254) TAG: La dirección es: 31[0m
+[0;32mI (1264) TAG: La dirección es: 128[0m
+[0;32mI (1274) TAG: La dirección es: 159[0m
+[0;32mI (1284) TAG: La dirección es: 0[0m
+[0;32mI (1294) TAG: La dirección es: 31[0m
+[0;32mI (1304) TAG: La dirección es: 128[0m
+[0;32mI (1304) TAG: La dirección es: 159[0m
+[0;32mI (1324) TAG: La dirección es: 0[0m
+[0;32mI (1324) TAG: La dirección es: 31[0m
+[0;32mI (1344) TAG: La dirección es: 128[0m
+[0;32mI (1344) TAG: La dirección es: 159[0m
+[0;32mI (1354) TAG: La dirección es: 0[0m
+[0;32mI (1364) TAG: La dirección es: 31[0m
+[0;32mI (1374) TAG: La dirección es: 128[0m
+[0;32mI (1384) TAG: La dirección es: 159[0m
+[0;32mI (1394) TAG: La dirección es: 0[0m
+[0;32mI (1404) TAG: La dirección es: 31[0m
+[0;32mI (1414) TAG: La dirección es: 128[0m
+[0;32mI (1414) TAG: La dirección es: 159[0m
+[0;32mI (1434) TAG: La dirección es: 0[0m
+[0;32mI (1434) TAG: La dirección es: 31[0m
+[0;32mI (1454) TAG: La dirección es: 128[0m
+[0;32mI (1454) TAG: La dirección es: 159[0m
+[0;32mI (1464) TAG: La dirección es: 0[0m
+[0;32mI (1474) TAG: La dirección es: 31[0m
+[0;32mI (1484) TAG: La dirección es: 128[0m
+[0;32mI (1494) TAG: La dirección es: 159[0m
+[0;32mI (1504) TAG: La dirección es: 0[0m
+[0;32mI (1514) TAG: La dirección es: 31[0m
+[0;32mI (1524) TAG: La dirección es: 128[0m
+[0;32mI (1524) TAG: La dirección es: 159[0m
+[0;32mI (1544) TAG: La dirección es: 0[0m
+[0;32mI (1544) TAG: La dirección es: 31[0m
+[0;32mI (1564) TAG: La dirección es: 128[0m
+[0;32mI (1564) TAG: La dirección es: 159[0m
+[0;32mI (1584) TAG: La dirección es: 0[0m
+[0;32mI (1584) TAG: La dirección es: 31[0m
+[0;32mI (1594) TAG: La dirección es: 128[0m
+[0;32mI (1604) TAG: La dirección es: 159[0m
+[0;32mI (1614) TAG: La dirección es: 0[0m
+[0;32mI (1624) TAG: La dirección es: 31[0m
+[0;32mI (1634) TAG: La dirección es: 128[0m
+[0;32mI (1634) TAG: La dirección es: 159[0m
+[0;32mI (1654) TAG: La dirección es: 0[0m
+[0;32mI (1654) TAG: La dirección es: 31[0m
+[0;32mI (1674) TAG: La dirección es: 128[0m
+[0;32mI (1674) TAG: La dirección es: 159[0m
+[0;32mI (1694) TAG: La dirección es: 0[0m
+[0;32mI (1694) TAG: La dirección es: 31[0m
+[0;32mI (1704) TAG: La dirección es: 128[0m
+[0;32mI (1714) TAG: La dirección es: 159[0m
+[0;32mI (1724) TAG: La dirección es: 0[0m
+[0;32mI (1734) TAG: La dirección es: 31[0m
+[0;32mI (1744) TAG: La dirección es: 128[0m
+[0;32mI (1754) TAG: La dirección es: 159[0m
+[0;32mI (1764) TAG: La dirección es: 0[0m
+[0;32mI (1764) TAG: La dirección es: 31[0m
+[0;32mI (1784) TAG: La dirección es: 128[0m
+[0;32mI (1784) TAG: La dirección es: 159[0m
+[0;32mI (1804) TAG: La dirección es: 0[0m
+[0;32mI (1804) TAG: La dirección es: 31[0m
+[0;32mI (1814) TAG: La dirección es: 128[0m
+[0;32mI (1824) TAG: La dirección es: 159[0m
+[0;32mI (1834) TAG: La dirección es: 0[0m
+[0;32mI (1844) TAG: La dirección es: 31[0m
+[0;32mI (1854) TAG: La dirección es: 128[0m
+[0;32mI (1864) TAG: La dirección es: 159[0m
+[0;32mI (1874) TAG: La dirección es: 0[0m
+[0;32mI (1874) TAG: La dirección es: 31[0m
+[0;32mI (1894) TAG: La dirección es: 128[0m
+[0;32mI (1894) TAG: La dirección es: 159[0m
+[0;32mI (1914) TAG: La dirección es: 0[0m
+[0;32mI (1914) TAG: La dirección es: 31[0m
+[0;32mI (1924) TAG: La dirección es: 128[0m
+[0;32mI (1934) TAG: La dirección es: 159[0m
+[0;32mI (1944) TAG: La dirección es: 0[0m
+[0;32mI (1954) TAG: La dirección es: 31[0m
+[0;32mI (1964) TAG: La dirección es: 128[0m
+[0;32mI (1974) TAG: La dirección es: 159[0m
+[0;32mI (1984) TAG: La dirección es: 0[0m
+[0;32mI (1984) TAG: La dirección es: 31[0m
+[0;32mI (2004) TAG: La dirección es: 128[0m
+[0;32mI (2004) TAG: La dirección es: 159[0m
+[0;32mI (2024) TAG: La dirección es: 0[0m
+[0;32mI (2024) TAG: La dirección es: 31[0m
+[0;32mI (2034) TAG: La dirección es: 128[0m
+[0;32mI (2044) TAG: La dirección es: 159[0m
+[0;32mI (2054) TAG: La dirección es: 0[0m
+[0;32mI (2064) TAG: La dirección es: 31[0m
+[0;32mI (2074) TAG: La dirección es: 128[0m
+[0;32mI (2084) TAG: La dirección es: 159[0m
+[0;32mI (2094) TAG: La dirección es: 0[0m
+[0;32mI (2094) TAG: La dirección es: 31[0m
+[0;32mI (2114) TAG: La dirección es: 128[0m
+[0;32mI (2114) TAG: La dirección es: 159[0m
+[0;32mI (2134) TAG: La dirección es: 0[0m
+[0;32mI (2134) TAG: La dirección es: 31[0m
+[0;32mI (2144) TAG: La dirección es: 128[0m
+[0;32mI (2154) TAG: La dirección es: 159[0m
+[0;32mI (2164) TAG: La dirección es: 0[0m
+[0;32mI (2174) TAG: La dirección es: 31[0m
+[0;32mI (2184) TAG: La dirección es: 128[0m
+[0;32mI (2194) TAG: La dirección es: 159[0m
+[0;32mI (2204) TAG: La dirección es: 0[0m
+[0;32mI (2204) TAG: La dirección es: 31[0m
+[0;32mI (2224) TAG: La dirección es: 128[0m
+[0;32mI (2224) TAG: La dirección es: 159[0m
+[0;32mI (2244) TAG: La dirección es: 0[0m
+[0;32mI (2244) TAG: La dirección es: 31[0m
+[0;32mI (2254) TAG: La dirección es: 128[0m
+[0;32mI (2264) TAG: La dirección es: 159[0m
+[0;32mI (2274) TAG: La dirección es: 0[0m
+[0;32mI (2284) TAG: La dirección es: 31[0m
+[0;32mI (2294) TAG: La dirección es: 128[0m
+[0;32mI (2304) TAG: La dirección es: 159[0m
+[0;32mI (2314) TAG: La dirección es: 0[0m
+[0;32mI (2314) TAG: La dirección es: 31[0m
+[0;32mI (2334) TAG: La dirección es: 128[0m
+[0;32mI (2334) TAG: La dirección es: 159[0m
+[0;32mI (2354) TAG: La dirección es: 0[0m
+[0;32mI (2354) TAG: La dirección es: 31[0m
+[0;32mI (2374) TAG: La dirección es: 128[0m
+[0;32mI (2374) TAG: La dirección es: 159[0m
+[0;32mI (2384) TAG: La dirección es: 0[0m
+[0;32mI (2394) TAG: La dirección es: 31[0m
+[0;32mI (2404) TAG: La dirección es: 128[0m
+[0;32mI (2414) TAG: La dirección es: 159[0m
+[0;32mI (2424) TAG: La dirección es: 0[0m
+[0;32mI (2424) TAG: La dirección es: 31[0m
+[0;32mI (2444) TAG: La dirección es: 128[0m
+[0;32mI (2444) TAG: La dirección es: 159[0m
+[0;32mI (2464) TAG: La dirección es: 0[0m
+[0;32mI (2464) TAG: La dirección es: 31[0m
+[0;32mI (2484) TAG: La dirección es: 128[0m
+[0;32mI (2484) TAG: La dirección es: 159[0m
+[0;32mI (2494) TAG: La dirección es: 0[0m
+[0;32mI (2504) TAG: La dirección es: 31[0m
+[0;32mI (2514) TAG: La dirección es: 128[0m
+[0;32mI (2524) TAG: La dirección es: 159[0m
+[0;32mI (2534) TAG: La dirección es: 0[0m
+[0;32mI (2544) TAG: La dirección es: 31[0m
+[0;32mI (2554) TAG: La dirección es: 128[0m
+[0;32mI (2554) TAG: La dirección es: 159[0m
+[0;32mI (2574) TAG: La dirección es: 0[0m
+[0;32mI (2574) TAG: La dirección es: 31[0m
+[0;32mI (2594) TAG: La dirección es: 128[0m
+[0;32mI (2594) TAG: La dirección es: 159[0m
+[0;32mI (2604) TAG: La dirección es: 0[0m
+[0;32mI (2614) TAG: La dirección es: 31[0m
+[0;32mI (2624) TAG: La dirección es: 128[0m
+[0;32mI (2634) TAG: La dirección es: 159[0m
+[0;32mI (2644) TAG: La dirección es: 0[0m
+[0;32mI (2654) TAG: La dirección es: 31[0m
+[0;32mI (2664) TAG: La dirección es: 128[0m
+[0;32mI (2664) TAG: La dirección es: 159[0m
+[0;32mI (2684) TAG: La dirección es: 0[0m
+[0;32mI (2684) TAG: La dirección es: 31[0m
+[0;32mI (2704) TAG: La dirección es: 128[0m
+[0;32mI (2704) TAG: La dirección es: 159[0m
+[0;32mI (2714) TAG: La dirección es: 0[0m
+[0;32mI (2724) TAG: La dirección es: 31[0m
+[0;32mI (2734) TAG: La dirección es: 128[0m
+[0;32mI (2744) TAG: La dirección es: 159[0m
+[0;32mI (2754) TAG: La dirección es: 0[0m
+[0;32mI (2764) TAG: La dirección es: 31[0m
+[0;32mI (2774) TAG: La dirección es: 128[0m
+[0;32mI (2774) TAG: La dirección es: 159[0m
+[0;32mI (2794) TAG: La dirección es: 0[0m
+[0;32mI (2794) TAG: La dirección es: 31[0m
+[0;32mI (2814) TAG: La dirección es: 128[0m
+[0;32mI (2814) TAG: La dirección es: 159[0m
+[0;32mI (2824) TAG: La dirección es: 0[0m
+[0;32mI (2834) TAG: La dirección es: 31[0m
+[0;32mI (2844) TAG: La dirección es: 128[0m
+[0;32mI (2854) TAG: La dirección es: 159[0m
+[0;32mI (2864) TAG: La dirección es: 0[0m
+[0;32mI (2874) TAG: La dirección es: 31[0m
+[0;32mI (2884) TAG: La dirección es: 128[0m
+[0;32mI (2884) TAG: La dirección es: 159[0m
+[0;32mI (2904) TAG: La dirección es: 0[0m
+[0;32mI (2904) TAG: La dirección es: 31[0m
+[0;32mI (2924) TAG: La dirección es: 128[0m
+[0;32mI (2924) TAG: La dirección es: 159[0m
+[0;32mI (2934) TAG: La dirección es: 0[0m
+[0;32mI (2944) TAG: La dirección es: 31[0m
+[0;32mI (2954) TAG: La dirección es: 128[0m
+[0;32mI (2964) TAG: La dirección es: 159[0m
+[0;32mI (2974) TAG: La dirección es: 0[0m
+[0;32mI (2984) TAG: La dirección es: 31[0m
+[0;32mI (2994) TAG: La dirección es: 128[0m
+[0;32mI (2994) TAG: La dirección es: 159[0m
+[0;32mI (3014) TAG: La dirección es: 0[0m
+[0;32mI (3014) TAG: La dirección es: 31[0m
+[0;32mI (3034) TAG: La dirección es: 128[0m
+[0;32mI (3034) TAG: La dirección es: 159[0m
+[0;32mI (3054) TAG: La dirección es: 0[0m
+[0;32mI (3054) TAG: La dirección es: 31[0m
+[0;32mI (3064) TAG: La dirección es: 128[0m
+[0;32mI (3074) TAG: La dirección es: 159[0m
+[0;32mI (3084) TAG: La dirección es: 0[0m
+[0;32mI (3094) TAG: La dirección es: 31[0m
+[0;32mI (3104) TAG: La dirección es: 128[0m
+[0;32mI (3104) TAG: La dirección es: 159[0m
+[0;32mI (3124) TAG: La dirección es: 0[0m
+[0;32mI (3124) TAG: La dirección es: 31[0m
+[0;32mI (3144) TAG: La dirección es: 128[0m
+[0;32mI (3144) TAG: La dirección es: 159[0m
+[0;32mI (3164) TAG: La dirección es: 0[0m
+[0;32mI (3164) TAG: La dirección es: 31[0m
+[0;32mI (3174) TAG: La dirección es: 128[0m
+[0;32mI (3184) TAG: La dirección es: 159[0m
+[0;32mI (3194) TAG: La dirección es: 0[0m
+[0;32mI (3204) TAG: La dirección es: 31[0m
+[0;32mI (3214) TAG: La dirección es: 128[0m
+[0;32mI (3214) TAG: La dirección es: 159[0m
+[0;32mI (3234) TAG: La dirección es: 0[0m
+[0;32mI (3234) TAG: La dirección es: 31[0m
+[0;32mI (3254) TAG: La dirección es: 128[0m
+[0;32mI (3254) TAG: La dirección es: 159[0m
+[0;32mI (3274) TAG: La dirección es: 0[0m
+[0;32mI (3274) TAG: La dirección es: 31[0m
+[0;32mI (3284) TAG: La dirección es: 128[0m
+[0;32mI (3294) TAG: La dirección es: 159[0m
+[0;32mI (3304) TAG: La dirección es: 0[0m
+[0;32mI (3314) TAG: La dirección es: 31[0m
+[0;32mI (3324) TAG: La dirección es: 128[0m
+[0;32mI (3334) TAG: La dirección es: 159[0m
+[0;32mI (3344) TAG: La dirección es: 0[0m
+[0;32mI (3344) TAG: La dirección es: 31[0m
+[0;32mI (3364) TAG: La dirección es: 128[0m
+[0;32mI (3364) TAG: La dirección es: 159[0m
+[0;32mI (3384) TAG: La dirección es: 0[0m
+[0;32mI (3384) TAG: La dirección es: 31[0m
+[0;32mI (3394) TAG: La dirección es: 128[0m
+[0;32mI (3404) TAG: La dirección es: 159[0m
+[0;32mI (3414) TAG: La dirección es: 0[0m
+[0;32mI (3424) TAG: La dirección es: 31[0m
+[0;32mI (3434) TAG: La dirección es: 128[0m
+[0;32mI (3444) TAG: La dirección es: 159[0m
+[0;32mI (3454) TAG: La dirección es: 0[0m
+[0;32mI (3454) TAG: La dirección es: 31[0m
+[0;32mI (3474) TAG: La dirección es: 128[0m
+[0;32mI (3474) TAG: La dirección es: 159[0m
+[0;32mI (3494) TAG: La dirección es: 0[0m
+[0;32mI (3494) TAG: La dirección es: 31[0m
+[0;32mI (3504) TAG: La dirección es: 128[0m
+[0;32mI (3514) TAG: La dirección es: 159[0m
+[0;32mI (3524) TAG: La dirección es: 0[0m
+[0;32mI (3534) TAG: La dirección es: 31[0m
+[0;32mI (3544) TAG: La dirección es: 128[0m
+[0;32mI (3554) TAG: La dirección es: 159[0m
+[0;32mI (3564) TAG: La dirección es: 0[0m
+[0;32mI (3564) TAG: La dirección es: 31[0m
+[0;32mI (3584) TAG: La dirección es: 128[0m
+[0;32mI (3584) TAG: La dirección es: 159[0m
+[0;32mI (3604) TAG: La dirección es: 0[0m
+[0;32mI (3604) TAG: La dirección es: 31[0m
+[0;32mI (3614) TAG: La dirección es: 128[0m
+[0;32mI (3624) TAG: La dirección es: 159[0m
+[0;32mI (3634) TAG: La dirección es: 0[0m
+[0;32mI (3644) TAG: La dirección es: 31[0m
+[0;32mI (3654) TAG: La dirección es: 128[0m
+[0;32mI (3664) TAG: La dirección es: 159[0m
+[0;32mI (3674) TAG: La dirección es: 0[0m
+[0;32mI (3674) TAG: La dirección es: 31[0m
+[0;32mI (3694) TAG: La dirección es: 128[0m
+[0;32mI (3694) TAG: La dirección es: 159[0m
+[0;32mI (3714) TAG: La dirección es: 0[0m
+[0;32mI (3714) TAG: La dirección es: 31[0m
+[0;32mI (3724) TAG: La dirección es: 128[0m
+[0;32mI (3734) TAG: La dirección es: 159[0m
+[0;32mI (3744) TAG: La dirección es: 0[0m
+[0;32mI (3754) TAG: La dirección es: 31[0m
+[0;32mI (3764) TAG: La dirección es: 128[0m
+[0;32mI (3774) TAG: La dirección es: 159[0m
+[0;32mI (3784) TAG: La dirección es: 0[0m
+[0;32mI (3784) TAG: La dirección es: 31[0m
+[0;32mI (3804) TAG: La dirección es: 128[0m
+[0;32mI (3804) TAG: La dirección es: 159[0m
+[0;32mI (3824) TAG: La dirección es: 0[0m
+[0;32mI (3824) TAG: La dirección es: 31[0m
+[0;32mI (3844) TAG: La dirección es: 128[0m
+[0;32mI (3844) TAG: La dirección es: 159[0m
+[0;32mI (3854) TAG: La dirección es: 0[0m
+[0;32mI (3864) TAG: La dirección es: 31[0m
+[0;32mI (3874) TAG: La dirección es: 128[0m
+[0;32mI (3884) TAG: La dirección es: 159[0m
+[0;32mI (3894) TAG: La dirección es: 0[0m
+[0;32mI (3894) TAG: La dirección es: 31[0m
+[0;32mI (3914) TAG: La dirección es: 128[0m
+[0;32mI (3914) TAG: La dirección es: 159[0m
+[0;32mI (3934) TAG: La dirección es: 0[0m
+[0;32mI (3934) TAG: La dirección es: 31[0m
+[0;32mI (3954) TAG: La dirección es: 128[0m
+[0;32mI (3954) TAG: La dirección es: 159[0m
+[0;32mI (3964) TAG: La dirección es: 0[0m
+[0;32mI (3974) TAG: La dirección es: 31[0m
+[0;32mI (3984) TAG: La dirección es: 128[0m
+[0;32mI (3994) TAG: La dirección es: 159[0m
+[0;32mI (4004) TAG: La dirección es: 0[0m
+[0;32mI (4004) TAG: La dirección es: 31[0m
+[0;32mI (4024) TAG: La dirección es: 128[0m
+[0;32mI (4024) TAG: La dirección es: 159[0m
+[0;32mI (4044) TAG: La dirección es: 0[0m
+[0;32mI (4044) TAG: La dirección es: 31[0m
+[0;32mI (4064) TAG: La dirección es: 128[0m
+[0;32mI (4064) TAG: La dirección es: 159[0m
+[0;32mI (4074) TAG: La dirección es: 0[0m
+[0;32mI (4084) TAG: La dirección es: 31[0m
+[0;32mI (4094) TAG: La dirección es: 128[0m
+[0;32mI (4104) TAG: La dirección es: 159[0m
+[0;32mI (4114) TAG: La dirección es: 0[0m
+[0;32mI (4124) TAG: La dirección es: 31[0m
+[0;32mI (4134) TAG: La dirección es: 128[0m
+[0;32mI (4134) TAG: La dirección es: 159[0m
+[0;32mI (4154) TAG: La dirección es: 0[0m
+[0;32mI (4154) TAG: La dirección es: 31[0m
+[0;32mI (4174) TAG: La dirección es: 128[0m
+[0;32mI (4174) TAG: La dirección es: 159[0m
+[0;32mI (4184) TAG: La dirección es: 0[0m
+[0;32mI (4194) TAG: La dirección es: 31[0m
+[0;32mI (4204) TAG: La dirección es: 128[0m
+[0;32mI (4214) TAG: La dirección es: 159[0m
+[0;32mI (4224) TAG: La dirección es: 0[0m
+[0;32mI (4234) TAG: La dirección es: 31[0m
+[0;32mI (4244) TAG: La dirección es: 128[0m
+[0;32mI (4244) TAG: La dirección es: 159[0m
+[0;32mI (4264) TAG: La dirección es: 0[0m
+[0;32mI (4264) TAG: La dirección es: 31[0m
+[0;32mI (4284) TAG: La dirección es: 128[0m
+[0;32mI (4284) TAG: La dirección es: 159[0m
+[0;32mI (4294) TAG: La dirección es: 0[0m
+[0;32mI (4304) TAG: La dirección es: 31[0m
+[0;32mI (4314) TAG: La dirección es: 128[0m
+[0;32mI (4324) TAG: La dirección es: 159[0m
+[0;32mI (4334) TAG: La dirección es: 0[0m
+[0;32mI (4344) TAG: La dirección es: 31[0m
+[0;32mI (4354) TAG: La dirección es: 128[0m
+[0;32mI (4354) TAG: La dirección es: 159[0m
+[0;32mI (4374) TAG: La dirección es: 0[0m
+[0;32mI (4374) TAG: La dirección es: 31[0m
+[0;32mI (4394) TAG: La dirección es: 128[0m
+[0;32mI (4394) TAG: La dirección es: 159[0m
+[0;32mI (4404) TAG: La dirección es: 0[0m
+[0;32mI (4414) TAG: La dirección es: 31[0m
+[0;32mI (4424) TAG: La dirección es: 128[0m
+[0;32mI (4434) TAG: La dirección es: 159[0m
+[0;32mI (4444) TAG: La dirección es: 0[0m
+[0;32mI (4454) TAG: La dirección es: 31[0m
+[0;32mI (4464) TAG: La dirección es: 128[0m
+[0;32mI (4464) TAG: La dirección es: 159[0m
+[0;32mI (4484) TAG: La dirección es: 0[0m
+[0;32mI (4484) TAG: La dirección es: 31[0m
+[0;32mI (4504) TAG: La dirección es: 128[0m
+[0;32mI (4504) TAG: La dirección es: 159[0m
+[0;32mI (4514) TAG: La dirección es: 0[0m
+[0;32mI (4524) TAG: La dirección es: 31[0m
+[0;32mI (4534) TAG: La dirección es: 128[0m
+[0;32mI (4544) TAG: La dirección es: 159[0m
+[0;32mI (4554) TAG: La dirección es: 0[0m
+[0;32mI (4564) TAG: La dirección es: 31[0m
+[0;32mI (4574) TAG: La dirección es: 128[0m
+[0;32mI (4574) TAG: La dirección es: 159[0m
+[0;32mI (4594) TAG: La dirección es: 0[0m
+[0;32mI (4594) TAG: La dirección es: 31[0m
+[0;32mI (4614) TAG: La dirección es: 128[0m
+[0;32mI (4614) TAG: La dirección es: 159[0m
+[0;32mI (4634) TAG: La dirección es: 0[0m
+[0;32mI (4634) TAG: La dirección es: 31[0m
+[0;32mI (4644) TAG: La dirección es: 128[0m
+[0;32mI (4654) TAG: La dirección es: 159[0m
+[0;32mI (4664) TAG: La dirección es: 0[0m
+[0;32mI (4674) TAG: La dirección es: 31[0m
+[0;32mI (4684) TAG: La dirección es: 128[0m
+[0;32mI (4684) TAG: La dirección es: 159[0m
+[0;32mI (4704) TAG: La dirección es: 0[0m
+[0;32mI (4704) TAG: La dirección es: 31[0m
+[0;32mI (4724) TAG: La dirección es: 128[0m
+[0;32mI (4724) TAG: La dirección es: 159[0m
+[0;32mI (4744) TAG: La dirección es: 0[0m
+[0;32mI (4744) TAG: La dirección es: 31[0m
+[0;32mI (4754) TAG: La dirección es: 128[0m
+[0;32mI (4764) TAG: La dirección es: 159[0m
+[0;32mI (4774) TAG: La dirección es: 0[0m
+[0;32mI (4784) TAG: La dirección es: 31[0m
+[0;32mI (4794) TAG: La dirección es: 128[0m
+[0;32mI (4804) TAG: La dirección es: 159[0m
+[0;32mI (4814) TAG: La dirección es: 0[0m
+[0;32mI (4814) TAG: La dirección es: 31[0m
+[0;32mI (4834) TAG: La dirección es: 128[0m
+[0;32mI (4834) TAG: La dirección es: 159[0m
+[0;32mI (4854) TAG: La dirección es: 0[0m
+[0;32mI (4854) TAG: La dirección es: 31[0m
+[0;32mI (4864) TAG: La dirección es: 128[0m
+[0;32mI (4874) TAG: La dirección es: 159[0m
+[0;32mI (4884) TAG: La dirección es: 0[0m
+[0;32mI (4894) TAG: La dirección es: 31[0m
+[0;32mI (4904) TAG: La dirección es: 128[0m
+[0;32mI (4914) TAG: La dirección es: 159[0m
+[0;32mI (4924) TAG: La dirección es: 0[0m
+[0;32mI (4924) TAG: La dirección es: 31[0m
+[0;32mI (4944) TAG: La dirección es: 128[0m
+[0;32mI (4944) TAG: La dirección es: 159[0m
+[0;32mI (4964) TAG: La dirección es: 0[0m
+[0;32mI (4964) TAG: La dirección es: 31[0m
+[0;32mI (4974) TAG: La dirección es: 128[0m
+[0;32mI (4984) TAG: La dirección es: 159[0m
+[0;32mI (4994) TAG: La dirección es: 0[0m
+[0;32mI (5004) TAG: La dirección es: 31[0m
+[0;32mI (5014) TAG: La dirección es: 128[0m
+[0;32mI (5024) TAG: La dirección es: 159[0m
+[0;32mI (5034) TAG: La dirección es: 0[0m
+[0;32mI (5034) TAG: La dirección es: 31[0m
+[0;32mI (5054) TAG: La dirección es: 128[0m
+[0;32mI (5054) TAG: La dirección es: 159[0m
+[0;32mI (5074) TAG: La dirección es: 0[0m
+[0;32mI (5074) TAG: La dirección es: 31[0m
+[0;32mI (5084) TAG: La dirección es: 128[0m
+[0;32mI (5094) TAG: La dirección es: 159[0m
+[0;32mI (5104) TAG: La dirección es: 0[0m
+[0;32mI (5114) TAG: La dirección es: 31[0m
+[0;32mI (5124) TAG: La dirección es: 128[0m
+[0;32mI (5134) TAG: La dirección es: 159[0m
+[0;32mI (5144) TAG: La dirección es: 0[0m
+[0;32mI (5144) TAG: La dirección es: 31[0m
+[0;32mI (5164) TAG: La dirección es: 128[0m
+[0;32mI (5164) TAG: La dirección es: 159[0m
+[0;32mI (5184) TAG: La dirección es: 0[0m
+[0;32mI (5184) TAG: La dirección es: 31[0m
+[0;32mI (5194) TAG: La dirección es: 128[0m
+[0;32mI (5204) TAG: La dirección es: 159[0m
+[0;32mI (5214) TAG: La dirección es: 0[0m
+[0;32mI (5224) TAG: La dirección es: 31[0m
+[0;32mI (5234) TAG: La dirección es: 128[0m
+[0;32mI (5244) TAG: La dirección es: 159[0m
+[0;32mI (5254) TAG: La dirección es: 0[0m
+[0;32mI (5254) TAG: La dirección es: 31[0m
+[0;32mI (5274) TAG: La dirección es: 128[0m
+[0;32mI (5274) TAG: La dirección es: 159[0m
+[0;32mI (5294) TAG: La dirección es: 0[0m
+[0;32mI (5294) TAG: La dirección es: 31[0m
+[0;32mI (5304) TAG: La dirección es: 128[0m
+[0;32mI (5314) TAG: La dirección es: 159[0m
+[0;32mI (5324) TAG: La dirección es: 0[0m
+[0;32mI (5334) TAG: La dirección es: 31[0m
+[0;32mI (5344) TAG: La dirección es: 128[0m
+[0;32mI (5354) TAG: La dirección es: 159[0m
+[0;32mI (5364) TAG: La dirección es: 0[0m
+[0;32mI (5364) TAG: La dirección es: 31[0m
+[0;32mI (5384) TAG: La dirección es: 128[0m
+[0;32mI (5384) TAG: La dirección es: 159[0m
+[0;31mE (5384) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (5384) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (5384) task_wdt: Tasks currently running:[0m
+[0;31mE (5384) task_wdt: CPU 0: main[0m
+[0;31mE (5384) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (5384) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200D607:0x3FC93300 0x4200DA24:0x3FC93320 0x40377175:0x3FC93350 0x4200AEB0:0x3FC99190 0x4200BE79:0x3FC991C0 0x4200855B:0x3FC99220 0x4201B80B:0x3FC992A0 0x4037A9E1:0x3FC992D0
+
+[0;31mE (10384) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (10384) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (10384) task_wdt: Tasks currently running:[0m
+[0;31mE (10384) task_wdt: CPU 0: main[0m
+[0;31mE (10384) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (10384) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200D607:0x3FC93300 0x4200DA24:0x3FC93320 0x40377175:0x3FC93350 0x4200AEB0:0x3FC99190 0x4200BE79:0x3FC991C0 0x4200855B:0x3FC99220 0x4201B80B:0x3FC992A0 0x4037A9E1:0x3FC992D0
+

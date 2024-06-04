@@ -1,0 +1,310 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x9 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40378636
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May 29 2024 18:35:39[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0e214h ( 57876) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001e23c vaddr=3fc92400 size=01ddch (  7644) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1c83ch (116796) map[0m
+[0;32mI (153) esp_image: segment 3: paddr=0003c864 vaddr=3fc941dc size=00b04h (  2820) load[0m
+[0;32mI (155) esp_image: segment 4: paddr=0003d370 vaddr=40374000 size=0e398h ( 58264) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (192) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     lectura_encoders[0m
+[0;32mI (211) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     May 29 2024 18:35:37[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d4b7a228c...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FC955D0 len 00054140 (336 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (278) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (288) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (293) spi_flash: flash io: opi_str[0m
+[0;33mW (297) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (317) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) gpio: GPIO[7]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (345) gpio: GPIO[6]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (355) Prueba: I2C configurado[0m
+[0;32mI (355) Prueba: Handle configurado[0m
+[0;32mI (355) Prueba: Reset handle configurado[0m
+[0;32mI (405) Prueba: Encoder Reiniciado[0m
+[0;32mI (405) Prueba: Prueba realizada[0m
+[0;32mI (405) Prueba: Al parecer se ha configurado el sensor de manera exitosa[0m
+[0;32mI (405) Prueba: El valor crudo es el siguiente para Bx: 255 y para By: 224[0m
+[0;32mI (415) Prueba: El valor procesado es el siguiente para Bx: -0.29mT y para By: -49.69mt[0m
+[0;32mI (425) Prueba: Rotacion: 180.34[0m
+[0;32mI (925) Prueba: El valor crudo es el siguiente para Bx: 254 y para By: 224[0m
+[0;32mI (925) Prueba: El valor procesado es el siguiente para Bx: -1.67mT y para By: -49.88mt[0m
+[0;32mI (925) Prueba: Rotacion: 181.91[0m
+[0;32mI (1425) Prueba: El valor crudo es el siguiente para Bx: 0 y para By: 224[0m
+[0;32mI (1425) Prueba: El valor procesado es el siguiente para Bx: 0.20mT y para By: -48.80mt[0m
+[0;32mI (1425) Prueba: Rotacion: 179.77[0m
+[0;32mI (1925) Prueba: El valor crudo es el siguiente para Bx: 1 y para By: 255[0m
+[0;32mI (1925) Prueba: El valor procesado es el siguiente para Bx: 3.04mT y para By: -0.10mt[0m
+[0;32mI (1925) Prueba: Rotacion: 91.85[0m
+[0;32mI (2425) Prueba: El valor crudo es el siguiente para Bx: 255 y para By: 223[0m
+[0;32mI (2425) Prueba: El valor procesado es el siguiente para Bx: -0.78mT y para By: -51.74mt[0m
+[0;32mI (2425) Prueba: Rotacion: 180.87[0m
+[0;32mI (2925) Prueba: El valor crudo es el siguiente para Bx: 254 y para By: 223[0m
+[0;32mI (2925) Prueba: El valor procesado es el siguiente para Bx: -1.67mT y para By: -51.25mt[0m
+[0;32mI (2925) Prueba: Rotacion: 181.86[0m
+[0;32mI (3425) Prueba: El valor crudo es el siguiente para Bx: 254 y para By: 223[0m
+[0;32mI (3425) Prueba: El valor procesado es el siguiente para Bx: -1.67mT y para By: -51.16mt[0m
+[0;32mI (3425) Prueba: Rotacion: 181.86[0m
+[0;32mI (3925) Prueba: El valor crudo es el siguiente para Bx: 253 y para By: 222[0m
+[0;32mI (3925) Prueba: El valor procesado es el siguiente para Bx: -4.51mT y para By: -51.94mt[0m
+[0;32mI (3925) Prueba: Rotacion: 184.96[0m
+[0;32mI (4425) Prueba: El valor crudo es el siguiente para Bx: 253 y para By: 222[0m
+[0;32mI (4425) Prueba: El valor procesado es el siguiente para Bx: -3.23mT y para By: -52.92mt[0m
+[0;32mI (4425) Prueba: Rotacion: 183.50[0m
+[0;32mI (4925) Prueba: El valor crudo es el siguiente para Bx: 9 y para By: 223[0m
+[0;32mI (4925) Prueba: El valor procesado es el siguiente para Bx: 15.29mT y para By: -51.25mt[0m
+[0;32mI (4925) Prueba: Rotacion: 163.39[0m
+[0;32mI (5425) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (5425) Prueba: El valor procesado es el siguiente para Bx: 28.81mT y para By: -46.75mt[0m
+[0;32mI (5425) Prueba: Rotacion: 148.35[0m
+[0;32mI (5925) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (5925) Prueba: El valor procesado es el siguiente para Bx: 29.11mT y para By: -46.65mt[0m
+[0;32mI (5925) Prueba: Rotacion: 148.04[0m
+[0;32mI (6425) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (6425) Prueba: El valor procesado es el siguiente para Bx: 29.20mT y para By: -46.45mt[0m
+[0;32mI (6425) Prueba: Rotacion: 147.84[0m
+[0;32mI (6925) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (6925) Prueba: El valor procesado es el siguiente para Bx: 29.20mT y para By: -46.35mt[0m
+[0;32mI (6925) Prueba: Rotacion: 147.79[0m
+[0;32mI (7425) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (7425) Prueba: El valor procesado es el siguiente para Bx: 29.11mT y para By: -46.55mt[0m
+[0;32mI (7425) Prueba: Rotacion: 147.98[0m
+[0;32mI (7925) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (7925) Prueba: El valor procesado es el siguiente para Bx: 29.30mT y para By: -46.65mt[0m
+[0;32mI (7925) Prueba: Rotacion: 147.87[0m
+[0;32mI (8425) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (8425) Prueba: El valor procesado es el siguiente para Bx: 29.40mT y para By: -46.26mt[0m
+[0;32mI (8425) Prueba: Rotacion: 147.56[0m
+[0;32mI (8925) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (8925) Prueba: El valor procesado es el siguiente para Bx: 29.30mT y para By: -46.45mt[0m
+[0;32mI (8925) Prueba: Rotacion: 147.76[0m
+[0;32mI (9425) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (9425) Prueba: El valor procesado es el siguiente para Bx: 29.20mT y para By: -46.55mt[0m
+[0;32mI (9425) Prueba: Rotacion: 147.90[0m
+[0;32mI (9925) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (9925) Prueba: El valor procesado es el siguiente para Bx: 29.30mT y para By: -46.26mt[0m
+[0;32mI (9925) Prueba: Rotacion: 147.65[0m
+[0;32mI (10425) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (10425) Prueba: El valor procesado es el siguiente para Bx: 29.30mT y para By: -46.55mt[0m
+[0;32mI (10425) Prueba: Rotacion: 147.81[0m
+[0;32mI (10925) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (10925) Prueba: El valor procesado es el siguiente para Bx: 29.11mT y para By: -46.55mt[0m
+[0;32mI (10925) Prueba: Rotacion: 147.98[0m
+[0;32mI (11425) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (11425) Prueba: El valor procesado es el siguiente para Bx: 29.30mT y para By: -46.65mt[0m
+[0;32mI (11425) Prueba: Rotacion: 147.87[0m
+[0;32mI (11925) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (11925) Prueba: El valor procesado es el siguiente para Bx: 29.20mT y para By: -46.65mt[0m
+[0;32mI (11925) Prueba: Rotacion: 147.95[0m
+[0;32mI (12425) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (12425) Prueba: El valor procesado es el siguiente para Bx: 29.69mT y para By: -46.75mt[0m
+[0;32mI (12425) Prueba: Rotacion: 147.58[0m
+[0;32mI (12925) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (12925) Prueba: El valor procesado es el siguiente para Bx: 29.20mT y para By: -46.55mt[0m
+[0;32mI (12925) Prueba: Rotacion: 147.90[0m
+[0;32mI (13425) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (13425) Prueba: El valor procesado es el siguiente para Bx: 29.40mT y para By: -46.65mt[0m
+[0;32mI (13425) Prueba: Rotacion: 147.78[0m
+[0;32mI (13925) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (13925) Prueba: El valor procesado es el siguiente para Bx: 29.30mT y para By: -46.65mt[0m
+[0;32mI (13925) Prueba: Rotacion: 147.87[0m
+[0;32mI (14425) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 226[0m
+[0;32mI (14425) Prueba: El valor procesado es el siguiente para Bx: 29.40mT y para By: -46.84mt[0m
+[0;32mI (14425) Prueba: Rotacion: 147.89[0m
+[0;32mI (14925) Prueba: El valor crudo es el siguiente para Bx: 17 y para By: 226[0m
+[0;32mI (14925) Prueba: El valor procesado es el siguiente para Bx: 27.44mT y para By: -45.86mt[0m
+[0;32mI (14925) Prueba: Rotacion: 149.11[0m
+[0;32mI (15425) Prueba: El valor crudo es el siguiente para Bx: 14 y para By: 224[0m
+[0;32mI (15425) Prueba: El valor procesado es el siguiente para Bx: 22.44mT y para By: -49.88mt[0m
+[0;32mI (15425) Prueba: Rotacion: 155.78[0m
+[0;32mI (15925) Prueba: El valor crudo es el siguiente para Bx: 12 y para By: 222[0m
+[0;32mI (15925) Prueba: El valor procesado es el siguiente para Bx: 19.80mT y para By: -52.14mt[0m
+[0;32mI (15925) Prueba: Rotacion: 159.21[0m
+[0;32mI (16425) Prueba: El valor crudo es el siguiente para Bx: 5 y para By: 222[0m
+[0;32mI (16425) Prueba: El valor procesado es el siguiente para Bx: 8.92mT y para By: -53.12mt[0m
+[0;32mI (16425) Prueba: Rotacion: 170.47[0m
+[0;32mI (16925) Prueba: El valor crudo es el siguiente para Bx: 255 y para By: 221[0m
+[0;32mI (16925) Prueba: El valor procesado es el siguiente para Bx: -1.18mT y para By: -54.00mt[0m
+[0;32mI (16925) Prueba: Rotacion: 181.25[0m
+[0;32mI (17425) Prueba: El valor crudo es el siguiente para Bx: 250 y para By: 222[0m
+[0;32mI (17425) Prueba: El valor procesado es el siguiente para Bx: -8.23mT y para By: -52.43mt[0m
+[0;32mI (17425) Prueba: Rotacion: 188.92[0m
+[0;32mI (17925) Prueba: El valor crudo es el siguiente para Bx: 246 y para By: 223[0m
+[0;32mI (17925) Prueba: El valor procesado es el siguiente para Bx: -15.19mT y para By: -51.55mt[0m
+[0;32mI (17925) Prueba: Rotacion: 196.42[0m
+[0;32mI (18435) Prueba: El valor crudo es el siguiente para Bx: 237 y para By: 227[0m
+[0;32mI (18435) Prueba: El valor procesado es el siguiente para Bx: -28.62mT y para By: -44.39mt[0m
+[0;32mI (18435) Prueba: Rotacion: 212.80[0m
+[0;32mI (18945) Prueba: El valor crudo es el siguiente para Bx: 231 y para By: 233[0m
+[0;32mI (18945) Prueba: El valor procesado es el siguiente para Bx: -38.02mT y para By: -35.48mt[0m
+[0;32mI (18945) Prueba: Rotacion: 226.98[0m
+[0;32mI (19455) Prueba: El valor crudo es el siguiente para Bx: 228 y para By: 238[0m
+[0;32mI (19455) Prueba: El valor procesado es el siguiente para Bx: -42.53mT y para By: -28.03mt[0m
+[0;32mI (19455) Prueba: Rotacion: 236.62[0m
+[0;32mI (19965) Prueba: El valor crudo es el siguiente para Bx: 228 y para By: 0[0m
+[0;32mI (19965) Prueba: El valor procesado es el siguiente para Bx: -42.53mT y para By: 0.10mt[0m
+[0;32mI (19965) Prueba: Rotacion: 270.13[0m
+[0;32mI (20465) Prueba: El valor crudo es el siguiente para Bx: 230 y para By: 2[0m
+[0;32mI (20465) Prueba: El valor procesado es el siguiente para Bx: -40.47mT y para By: 3.53mt[0m
+[0;32mI (20465) Prueba: Rotacion: 274.98[0m
+[0;32mI (20965) Prueba: El valor crudo es el siguiente para Bx: 225 y para By: 253[0m
+[0;32mI (20965) Prueba: El valor procesado es el siguiente para Bx: -47.82mT y para By: -3.63mt[0m
+[0;32mI (20965) Prueba: Rotacion: 265.66[0m
+[0;32mI (21465) Prueba: El valor crudo es el siguiente para Bx: 211 y para By: 255[0m
+[0;32mI (21465) Prueba: El valor procesado es el siguiente para Bx: -69.09mT y para By: -0.10mt[0m
+[0;32mI (21465) Prueba: Rotacion: 269.92[0m
+[0;32mI (21965) Prueba: El valor crudo es el siguiente para Bx: 4 y para By: 222[0m
+[0;32mI (21965) Prueba: El valor procesado es el siguiente para Bx: 7.74mT y para By: -53.02mt[0m
+[0;32mI (21965) Prueba: Rotacion: 171.69[0m
+[0;32mI (22465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (22465) Prueba: El valor procesado es el siguiente para Bx: 29.01mT y para By: -44.49mt[0m
+[0;32mI (22465) Prueba: Rotacion: 146.90[0m
+[0;32mI (22965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (22965) Prueba: El valor procesado es el siguiente para Bx: 29.11mT y para By: -44.49mt[0m
+[0;32mI (22965) Prueba: Rotacion: 146.81[0m
+[0;32mI (23465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (23465) Prueba: El valor procesado es el siguiente para Bx: 28.91mT y para By: -44.39mt[0m
+[0;32mI (23465) Prueba: Rotacion: 146.93[0m
+[0;32mI (23965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (23965) Prueba: El valor procesado es el siguiente para Bx: 29.20mT y para By: -44.49mt[0m
+[0;32mI (23965) Prueba: Rotacion: 146.72[0m
+[0;32mI (24465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (24465) Prueba: El valor procesado es el siguiente para Bx: 29.11mT y para By: -44.49mt[0m
+[0;32mI (24465) Prueba: Rotacion: 146.81[0m
+[0;32mI (24965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (24965) Prueba: El valor procesado es el siguiente para Bx: 28.52mT y para By: -44.30mt[0m
+[0;32mI (24965) Prueba: Rotacion: 147.23[0m
+[0;32mI (25465) Prueba: El valor crudo es el siguiente para Bx: 17 y para By: 227[0m
+[0;32mI (25465) Prueba: El valor procesado es el siguiente para Bx: 28.13mT y para By: -45.08mt[0m
+[0;32mI (25465) Prueba: Rotacion: 148.04[0m
+[0;32mI (25965) Prueba: El valor crudo es el siguiente para Bx: 17 y para By: 227[0m
+[0;32mI (25965) Prueba: El valor procesado es el siguiente para Bx: 27.93mT y para By: -44.88mt[0m
+[0;32mI (25965) Prueba: Rotacion: 148.11[0m
+[0;32mI (26465) Prueba: El valor crudo es el siguiente para Bx: 17 y para By: 227[0m
+[0;32mI (26465) Prueba: El valor procesado es el siguiente para Bx: 27.73mT y para By: -45.08mt[0m
+[0;32mI (26465) Prueba: Rotacion: 148.40[0m
+[0;32mI (26965) Prueba: El valor crudo es el siguiente para Bx: 17 y para By: 227[0m
+[0;32mI (26965) Prueba: El valor procesado es el siguiente para Bx: 28.13mT y para By: -45.18mt[0m
+[0;32mI (26965) Prueba: Rotacion: 148.10[0m
+[0;32mI (27465) Prueba: El valor crudo es el siguiente para Bx: 17 y para By: 227[0m
+[0;32mI (27465) Prueba: El valor procesado es el siguiente para Bx: 28.03mT y para By: -45.08mt[0m
+[0;32mI (27465) Prueba: Rotacion: 148.13[0m
+[0;32mI (27965) Prueba: El valor crudo es el siguiente para Bx: 17 y para By: 227[0m
+[0;32mI (27965) Prueba: El valor procesado es el siguiente para Bx: 27.83mT y para By: -44.79mt[0m
+[0;32mI (27965) Prueba: Rotacion: 148.14[0m
+[0;32mI (28465) Prueba: El valor crudo es el siguiente para Bx: 17 y para By: 227[0m
+[0;32mI (28465) Prueba: El valor procesado es el siguiente para Bx: 27.83mT y para By: -45.08mt[0m
+[0;32mI (28465) Prueba: Rotacion: 148.31[0m
+[0;32mI (28965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (28965) Prueba: El valor procesado es el siguiente para Bx: 28.62mT y para By: -44.49mt[0m
+[0;32mI (28965) Prueba: Rotacion: 147.25[0m
+[0;32mI (29465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (29465) Prueba: El valor procesado es el siguiente para Bx: 28.71mT y para By: -44.59mt[0m
+[0;32mI (29465) Prueba: Rotacion: 147.22[0m
+[0;32mI (29965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (29965) Prueba: El valor procesado es el siguiente para Bx: 28.52mT y para By: -44.88mt[0m
+[0;32mI (29965) Prueba: Rotacion: 147.57[0m
+[0;32mI (30465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (30465) Prueba: El valor procesado es el siguiente para Bx: 28.62mT y para By: -44.98mt[0m
+[0;32mI (30465) Prueba: Rotacion: 147.54[0m
+[0;32mI (30965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (30965) Prueba: El valor procesado es el siguiente para Bx: 28.62mT y para By: -44.79mt[0m
+[0;32mI (30965) Prueba: Rotacion: 147.42[0m
+[0;32mI (31465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (31465) Prueba: El valor procesado es el siguiente para Bx: 28.52mT y para By: -44.69mt[0m
+[0;32mI (31465) Prueba: Rotacion: 147.46[0m
+[0;32mI (31965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (31965) Prueba: El valor procesado es el siguiente para Bx: 28.52mT y para By: -44.69mt[0m
+[0;32mI (31965) Prueba: Rotacion: 147.46[0m
+[0;32mI (32465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (32465) Prueba: El valor procesado es el siguiente para Bx: 28.62mT y para By: -44.69mt[0m
+[0;32mI (32465) Prueba: Rotacion: 147.37[0m
+[0;32mI (32965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (32965) Prueba: El valor procesado es el siguiente para Bx: 28.71mT y para By: -44.49mt[0m
+[0;32mI (32965) Prueba: Rotacion: 147.16[0m
+[0;32mI (33465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (33465) Prueba: El valor procesado es el siguiente para Bx: 28.62mT y para By: -44.59mt[0m
+[0;32mI (33465) Prueba: Rotacion: 147.31[0m
+[0;32mI (33965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (33965) Prueba: El valor procesado es el siguiente para Bx: 28.62mT y para By: -44.69mt[0m
+[0;32mI (33965) Prueba: Rotacion: 147.37[0m
+[0;32mI (34465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (34465) Prueba: El valor procesado es el siguiente para Bx: 28.42mT y para By: -44.79mt[0m
+[0;32mI (34465) Prueba: Rotacion: 147.60[0m
+[0;32mI (34965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (34965) Prueba: El valor procesado es el siguiente para Bx: 28.62mT y para By: -44.59mt[0m
+[0;32mI (34965) Prueba: Rotacion: 147.31[0m
+[0;32mI (35465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (35465) Prueba: El valor procesado es el siguiente para Bx: 28.62mT y para By: -44.69mt[0m
+[0;32mI (35465) Prueba: Rotacion: 147.37[0m
+[0;32mI (35965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (35965) Prueba: El valor procesado es el siguiente para Bx: 28.71mT y para By: -44.49mt[0m
+[0;32mI (35965) Prueba: Rotacion: 147.16[0m
+[0;32mI (36465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (36465) Prueba: El valor procesado es el siguiente para Bx: 28.42mT y para By: -44.49mt[0m
+[0;32mI (36465) Prueba: Rotacion: 147.43[0m
+[0;32mI (36965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (36965) Prueba: El valor procesado es el siguiente para Bx: 28.62mT y para By: -44.39mt[0m
+[0;32mI (36965) Prueba: Rotacion: 147.20[0m
+[0;32mI (37465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (37465) Prueba: El valor procesado es el siguiente para Bx: 28.62mT y para By: -44.49mt[0m
+[0;32mI (37465) Prueba: Rotacion: 147.25[0m
+[0;32mI (37965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (37965) Prueba: El valor procesado es el siguiente para Bx: 28.52mT y para By: -44.39mt[0m
+[0;32mI (37965) Prueba: Rotacion: 147.28[0m
+[0;32mI (38465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (38465) Prueba: El valor procesado es el siguiente para Bx: 28.52mT y para By: -44.30mt[0m
+[0;32mI (38465) Prueba: Rotacion: 147.23[0m
+[0;32mI (38965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (38965) Prueba: El valor procesado es el siguiente para Bx: 28.62mT y para By: -44.20mt[0m
+[0;32mI (38965) Prueba: Rotacion: 147.08[0m
+[0;32mI (39465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (39465) Prueba: El valor procesado es el siguiente para Bx: 28.52mT y para By: -44.30mt[0m
+[0;32mI (39465) Prueba: Rotacion: 147.23[0m
+[0;32mI (39965) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (39965) Prueba: El valor procesado es el siguiente para Bx: 28.71mT y para By: -44.10mt[0m
+[0;32mI (39965) Prueba: Rotacion: 146.93[0m
+[0;32mI (40465) Prueba: El valor crudo es el siguiente para Bx: 18 y para By: 227[0m
+[0;32mI (40465) Prueba: El valor procesado es el siguiente para Bx: 28.71mT y para By: -44.20mt[0m
+[0;32mI (40465) Prueba: Rotacion: 146.99[0m

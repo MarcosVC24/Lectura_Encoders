@@ -1,0 +1,25 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x400559dd: _xtos_set_intlevel in ROM
+[0m
+[0;33m0x4200d607: task_wdt_timeout_handling at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x4200da24: task_wdt_isr at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40377175: _xt_lowint1 at /home/marcos/Esp32/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4200aeb0: s_i2c_send_commands at /home/marcos/Esp32/esp-idf/components/driver/i2c/i2c_master.c:433 (discriminator 1)
+0x4200be79: i2c_master_probe at /home/marcos/Esp32/esp-idf/components/driver/i2c/i2c_master.c:1062
+0x4200855b: app_main at /home/marcos/Esp32/lectura_encoders/main/lectura_encoders.c:101
+0x4201b80b: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037a9e1: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200d607: task_wdt_timeout_handling at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x4200da24: task_wdt_isr at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40377175: _xt_lowint1 at /home/marcos/Esp32/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4200aeb0: s_i2c_send_commands at /home/marcos/Esp32/esp-idf/components/driver/i2c/i2c_master.c:433 (discriminator 1)
+0x4200be79: i2c_master_probe at /home/marcos/Esp32/esp-idf/components/driver/i2c/i2c_master.c:1062
+0x4200855b: app_main at /home/marcos/Esp32/lectura_encoders/main/lectura_encoders.c:101
+0x4201b80b: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037a9e1: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m
+Toggle output display: False, Type Ctrl+T Ctrl+Y to show/disable output again.[0m
+[0m
