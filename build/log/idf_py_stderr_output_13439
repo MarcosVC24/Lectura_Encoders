@@ -1,0 +1,7 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4200b4ef: s_i2c_send_commands at /home/marcos/Esp32/esp-idf/components/driver/i2c/i2c_master.c:433 (discriminator 1)
+[0m
+[0;33m
+Toggle output display: False, Type Ctrl+T Ctrl+Y to show/disable output again.[0m
+[0m
